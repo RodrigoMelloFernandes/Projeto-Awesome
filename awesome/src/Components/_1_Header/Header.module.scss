@@ -1,7 +1,63 @@
-@import '../../Sass/styles.scss';
+@import "../../Sass/styles.scss";
 
 .header {
-    &__title{
-        @extend .titleh1
+  @include display-flexDirection(flex, column);
+  &__menu {
+    background-color: $Branco;
+    &___title {
+      @extend .titleHeader;
     }
+  }
+  &__contacts {
+    @include display-flexDirection(flex, column);
+    padding: $padding-lateral;
+    &___containerPhone {
+      @include display-flexDirection(flex, row);
+      @include alignItems-justifyContent(center, space-between);
+      width: 48%;
+      margin-bottom: 5%;
+      &____phoneIcon {
+        @extend .phoneIcon;
+      }
+      &____title {
+        @extend .titleContacts;
+      }
+      &____subtitle {
+        @extend .subtitlePhone;
+      }
+    }
+
+    &___containerEmail {
+      @include display-flexDirection(flex, row);
+      @include alignItems-justifyContent(center, space-between);
+      width: 74%;
+      margin-bottom: 5%;
+
+      &____emailIcon {
+        @extend .emailIcon;
+      }
+
+      &____title {
+        @extend .titleContacts;
+      }
+
+      &____subtitle {
+        @extend .subtitleEmail;
+      }
+    }
+
+    &___containerSocialMedia {
+      @include display-flexDirection(flex, row);
+      @include alignItems-justifyContent(center, space-between);
+      width: 60%;
+
+      &____title {
+        @extend .titleContacts;
+      }
+
+      &____icon {
+        @extend .socialmediaIcon;
+      }
+    }
+  }
 }

@@ -1,0 +1,16 @@
+@import "../../mixins" , "../../variables";
+
+
+.titleHeader{
+    font-weight: bold;
+    font-size: 1.875rem;
+    height: 4.375rem;
+    line-height: 2.5rem;
+    color: $Cinza;
+    padding: 0.75rem 0 0 0.75rem;
+}
+
+.titleContacts{
+    font-weight: bold;
+    font-size: 0.875rem;
+}
