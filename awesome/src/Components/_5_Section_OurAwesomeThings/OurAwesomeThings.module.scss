@@ -4,7 +4,7 @@
     @include display-flexDirection(flex, column);
     @include alignItems-justifyContent(center, center);
     padding: $padding-lateral;
-    margin-bottom: 20%;
+    margin-bottom: 5%;
 
     &__title{
         @extend .titleWeAreAwesome;

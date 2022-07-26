@@ -4,6 +4,7 @@
     @include display-flexDirection(flex, column);
     @include alignItems-justifyContent(start, center);
     padding: $padding-lateral;
+    background: #202020;
 
     &__title{
         @extend .titleWeAreAwesome;
@@ -39,11 +40,13 @@
     }
 
     &__containerIcon{
-        @include display-flexDirection(flex, column);       
+        @include display-flexDirection(flex, column); 
+        width: 100%;      
         
         &___container{
             @include display-flexDirection(flex, row);
             align-items: center;
+            
             
             &____box{
                 width: 15%;
@@ -60,9 +63,16 @@
             
             &____subtitle{
                 @extend .subtitleContactAwesome; 
-            }  
+                
+            }
+            
         }
         
+        &___subtitleNumber{
+            @extend .subtitleContactAwesome;
+            margin-left: 0;
+            margin-bottom: 5%;
+        }
     }
 
     &__breakline{
@@ -98,7 +108,7 @@
 .copyrightContainer{
     width: 100%;
     height: 5rem;
-    background-color: $Cinza;
+    background-color: #303030;
     @include display-flexDirection(flex, row);
     @include alignItems-justifyContent(center, center);
     

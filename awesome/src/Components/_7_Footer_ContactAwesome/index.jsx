@@ -40,8 +40,9 @@ function ContactAwesome () {
                     <div className={styles.contactAwesome__containerIcon___container____box}>
                         <FaMapMarkerAlt className={styles.contactAwesome__containerIcon___container____box_____icon}/>
                     </div>
-                    <p className={styles.contactAwesome__containerIcon___container____subtitle}>663 New Walk Roadside, Birdeye View, GO 11020</p>
+                    <p className={styles.contactAwesome__containerIcon___container____subtitle}>663 New Walk Roadside, Birdeye View, GO </p>
                 </div>
+                    <p className={styles.contactAwesome__containerIcon___subtitleNumber}>11020</p>
             </div>
 
             <hr className={styles.contactAwesome__breakline}/>
