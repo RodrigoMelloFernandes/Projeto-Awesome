@@ -1,0 +1,45 @@
+@import "../../Sass/styles.scss";
+
+.ourAwesomeThings {
+    @include display-flexDirection(flex, column);
+    @include alignItems-justifyContent(center, center);
+    padding: $padding-lateral;
+    margin-bottom: 20%;
+
+    &__title{
+        @extend .titleWeAreAwesome;
+        &___span{
+            @extend .span;
+            font-size: 2.5rem;
+        }
+    }
+
+    &__container{
+        @extend .awesomeTeamContainer;
+        &___containerIcon{
+            @extend .containerIcon;
+            width: 30%;
+            height: 6rem;
+            margin-bottom: 5%;
+            &____icon{
+                @extend .ourAwesomeThingsIcons;
+            }
+
+            
+        }
+
+        &___title{
+            @extend .subtitleAwesomeTeam;
+            margin-bottom: 5%;
+            font-size: 1rem;
+        }
+
+        &___subtitle{
+            @extend .subtitleAwesomeTeam;
+            color: $Branco;
+            font-weight: 300;
+            margin-bottom: 10%;
+            line-height: 1.2rem;
+        }
+    }
+}
