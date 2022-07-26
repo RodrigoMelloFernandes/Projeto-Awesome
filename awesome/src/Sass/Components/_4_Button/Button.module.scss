@@ -1,0 +1,16 @@
+@import "../../mixins" , "../../variables";
+
+.buttonGetStarted{
+    background: transparent;
+    width: 45%;
+    height: 3rem;
+    color: $Branco;
+    border-radius: 2px;
+    transition: all 0.4s ease-in-out;
+    border-radius: 2px;
+    border: 1px solid $Cinza;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 10%;
+    margin-right: 55%;
+}

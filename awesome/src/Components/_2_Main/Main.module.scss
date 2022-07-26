@@ -1,4 +1,4 @@
-
+@import '../../Sass/styles.scss';
 
 .main {
     background-image: url(../../Images/home-bg.jpg);
@@ -7,5 +7,25 @@
     height: 26rem;
     width: 100%;
 
+    @include display-flexDirection(flex, column);
+    @include alignItems-justifyContent(center, center);
+
+    padding: $padding-lateral;
     
+
+    &__title{
+        @extend .titleMain;
+
+        &___span{
+            @extend .span;
+        }
+    }
+
+    &__subtitle{
+        @extend .subtitleMain;
+    }
+
+    &__button{
+        @extend .buttonGetStarted;
+    }
 }
