@@ -1,6 +1,6 @@
 @import "../../mixins" , "../../variables";
 
-
+// Header Title Start
 .titleHeader{
     font-weight: bold;
     font-size: 1.875rem;
@@ -14,10 +14,32 @@
     font-weight: bold;
     font-size: 0.875rem;
 }
+// Header Title End
 
+// Main Title Start
 .titleMain{
     font-size: 3.2rem;
     font-weight: 300;
     width: 100%;
     margin-bottom: 5%;
 }
+// Main Title End
+
+// Section WeAreAwesome Title Start
+.titleWeAreAwesome{
+   font-size: 2.5rem;
+   text-transform: uppercase;
+   font-weight: bold;
+   text-align: center;
+   margin: 10% auto 10%;
+   line-height: 3rem;
+}
+
+.titleWeAreAwesomeContent{
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10%;
+                    
+}
+// Section WeAreAwesome Title End

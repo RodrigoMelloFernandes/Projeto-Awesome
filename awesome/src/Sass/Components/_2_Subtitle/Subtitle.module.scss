@@ -1,5 +1,6 @@
 @import "../../mixins" , "../../variables";
 
+// Header Subtitle Start
 .subtitlePhone{
     font-size: 0.875rem;
 }
@@ -12,3 +13,14 @@
 .subtitleMain{
     line-height: 1.2rem;
 }
+
+// Header Subtitle End
+
+// Section WeAreAwesome Subtitle Start
+
+.subtitleWeAreAwesome{
+    line-height: 1.2rem;
+    font-size: .85rem;
+}
+
+// Section WeAreAwesome Subtitle End

@@ -12,10 +12,7 @@
     @include display-flexDirection(flex, column);
     padding: $padding-lateral;
     &___containerPhone {
-      @include display-flexDirection(flex, row);
-      @include alignItems-justifyContent(center, space-between);
-      width: 48%;
-      margin-bottom: 5%;
+      @extend .containerPhone;
       &____phoneIcon {
         @extend .phoneIcon;
       }
@@ -28,10 +25,7 @@
     }
 
     &___containerEmail {
-      @include display-flexDirection(flex, row);
-      @include alignItems-justifyContent(center, space-between);
-      width: 74%;
-      margin-bottom: 5%;
+      @extend .containerEmail;
 
       &____emailIcon {
         @extend .emailIcon;
@@ -47,9 +41,7 @@
     }
 
     &___containerSocialMedia {
-      @include display-flexDirection(flex, row);
-      @include alignItems-justifyContent(center, space-between);
-      width: 60%;
+      @extend .containerSocialMedia;
 
       &____title {
         @extend .titleContacts;

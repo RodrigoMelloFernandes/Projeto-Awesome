@@ -1,0 +1,34 @@
+@import "../../Sass/styles.scss";
+
+.WeAreAwesome{
+    @include display-flexDirection(flex, column);
+    @include alignItems-justifyContent(center, center);
+    padding: $padding-lateral;
+    margin-bottom: 20%;
+
+    &__title{
+        @extend .titleWeAreAwesome;
+        &___span{
+            @extend .span;
+            font-size: 2.5rem;
+        }
+    }
+
+    &__container{
+        @extend .container;
+        &___containerIcon{
+            @extend .containerIcon;
+        }
+        
+        &___content{
+            @extend .containerContent;
+            &____title{
+                @extend .titleWeAreAwesomeContent;
+            }
+            &____subtitle{
+                @extend .subtitleWeAreAwesome;
+            }
+        }
+    }
+
+}

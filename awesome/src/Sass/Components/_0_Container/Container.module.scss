@@ -1,0 +1,47 @@
+@import "../../mixins" , "../../variables";
+
+// Header Container Start
+.containerPhone{
+    @include display-flexDirection(flex, row);
+    @include alignItems-justifyContent(center, space-between);
+    width: 48%;
+    margin-bottom: 5%;
+}
+
+.containerEmail{
+    @include display-flexDirection(flex, row);
+    @include alignItems-justifyContent(center, space-between);
+    width: 74%;
+    margin-bottom: 5%;
+}
+
+.containerSocialMedia{
+    @include display-flexDirection(flex, row);
+    @include alignItems-justifyContent(center, space-between);
+    width: 60%;
+}
+// Header Container End
+
+// WeAreAwesome Containers Start
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.containerIcon{
+    width: 18%;
+    height: 3.5rem;
+    border: 1px solid $Branco;
+    @include display-flexDirection(flex, row);
+    @include alignItems-justifyContent(center, center);
+}
+
+.containerContent{
+    width: 76%;
+    margin-top: 5%;
+}
+
+// WeAreAwesome Containers End
+
