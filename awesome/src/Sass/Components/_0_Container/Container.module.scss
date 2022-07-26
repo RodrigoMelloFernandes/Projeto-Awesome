@@ -45,3 +45,11 @@
 
 // WeAreAwesome Containers End
 
+// AwesomeTeam Containers Start
+
+.awesomeTeamContainer{
+    @include display-flexDirection(flex, column);
+    @include alignItems-justifyContent(start, center);
+}
+
+// AwesomeTeam Containers End
