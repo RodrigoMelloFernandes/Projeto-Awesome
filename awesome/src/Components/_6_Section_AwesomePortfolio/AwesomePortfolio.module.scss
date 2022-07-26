@@ -1,32 +1,49 @@
-.img1{
-    background-image: url(../../Images/portfolio-img1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 22rem;
+@import "../../Sass/styles.scss";
+
+.awesomeportfolio{
+    @include display-flexDirection(flex, column);
+    @include alignItems-justifyContent(center, center);
+    
+    margin-bottom: 20%;
+
+    &__title{
+        @extend .titleWeAreAwesome;
+        &___span{
+            @extend .span;
+            font-size: 2.5rem;
+        }
+    }
+    .img1{
+        background-image: url(../../Images/portfolio-img1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 22rem;
+    }
+    
+    .img2{
+        background-image: url(../../Images/portfolio-img2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 22rem;
+    }
+    
+    .img3{
+        background-image: url(../../Images/portfolio-img3.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 22rem;
+    }
+    
+    .img4{
+        background-image: url(../../Images/portfolio-img4.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 22rem;
+    }
 }
 
-.img2{
-    background-image: url(../../Images/portfolio-img2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 22rem;
-}
-
-.img3{
-    background-image: url(../../Images/portfolio-img3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 22rem;
-}
-
-.img4{
-    background-image: url(../../Images/portfolio-img4.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 22rem;
-}
 
