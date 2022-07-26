@@ -1,0 +1,111 @@
+@import "../../Sass/styles.scss";
+
+.contactAwesome {
+    @include display-flexDirection(flex, column);
+    @include alignItems-justifyContent(start, center);
+    padding: $padding-lateral;
+
+    &__title{
+        @extend .titleWeAreAwesome;
+        &___span{
+            @extend .span;
+            font-size: 2.5rem;
+        }
+    }
+
+    &__inputTitle{
+        @extend .titleContactAwesome;
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+    }
+
+    &__input{
+        @extend .inputContactAwesome;
+    }
+
+    &__button{
+        @extend .buttonSend;
+    }
+
+    &__titleAdress{
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 5%;
+    }
+
+    &__subtitleAdress{
+        @extend .subtitleWeAreAwesome;
+        margin-bottom: 5%;
+    }
+
+    &__containerIcon{
+        @include display-flexDirection(flex, column);       
+        
+        &___container{
+            @include display-flexDirection(flex, row);
+            align-items: center;
+            
+            &____box{
+                width: 15%;
+                height: 3rem;
+                border: 1px solid $Branco;
+                @include display-flexDirection(flex, row);
+                @include alignItems-justifyContent(center, center);
+                margin-bottom: 5%;
+
+                &_____icon{
+                    
+                }
+            }
+            
+            &____subtitle{
+                @extend .subtitleContactAwesome; 
+            }  
+        }
+        
+    }
+
+    &__breakline{
+        width: 100%;
+        background-color: $Cinza;
+        height: .01rem;
+        margin-bottom: 10%;
+    }
+
+    &__socialMediaContainer{
+        @include display-flexDirection(flex, row);
+        width: 90%;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10%;
+        
+        &___socialMediaTitle{
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 5%;
+        }
+
+        &___container {
+            width: 15%;
+            height: 3rem;
+            border: 1px solid $Branco;
+            @include display-flexDirection(flex, row);
+            @include alignItems-justifyContent(center, center);
+        }
+    } 
+    
+}
+.copyrightContainer{
+    width: 100%;
+    height: 5rem;
+    background-color: $Cinza;
+    @include display-flexDirection(flex, row);
+    @include alignItems-justifyContent(center, center);
+    
+
+    &__subtitle{
+        color: $Branco;
+        font-size: .875rem;
+        font-weight: bold;
+    }
+}

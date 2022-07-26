@@ -1,0 +1,17 @@
+@import "../../mixins" , "../../variables";
+
+// Footer ContactAwesome Input Start
+
+.inputContactAwesome{
+    background: transparent;
+    border: 1px solid $Azul;
+    width: 100%;
+    height: 3rem;
+    border-radius: 2.5px;
+
+    &:last-of-type{
+        height: 6rem;
+    }
+}
+
+// Footer ContactAwesome Input End
