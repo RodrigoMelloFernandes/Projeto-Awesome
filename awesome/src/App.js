@@ -10,13 +10,13 @@ import ContactAwesome from './Components/_7_Footer_ContactAwesome'
 function App() {
   return (
     <>
-      <Header></Header>
-      <Main></Main>
-      <WeAreAwesome></WeAreAwesome>
-      <AwesomeTeam></AwesomeTeam>
-      <OurAwesomeThings></OurAwesomeThings>
-      <AwesomePortfolio></AwesomePortfolio>
-      <ContactAwesome></ContactAwesome>
+      <Header/>
+      <Main/>
+      <WeAreAwesome/>
+      <AwesomeTeam/>
+      <OurAwesomeThings/>
+      <AwesomePortfolio/>
+      <ContactAwesome/>
     </>
   );
 }

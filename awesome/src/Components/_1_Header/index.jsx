@@ -1,11 +1,12 @@
 import { FaPhoneAlt, FaEnvelope, FaFacebookF, FaTwitter, FaInstagram, FaApple } from 'react-icons/fa';
+import styles from './Header.module.scss';
 
 
 function Header () {
     return (
-        <header >
+        <header className={styles.header}>
             <nav>
-                <h2>Awesome</h2>
+                <h2 className={styles.header__title}>Awesome</h2>
                 <div>
                     <div></div>
                     <div></div>

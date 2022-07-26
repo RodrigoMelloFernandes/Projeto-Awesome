@@ -1,0 +1,7 @@
+@import '../../Sass/styles.scss';
+
+.header {
+    &__title{
+        @extend .titleh1
+    }
+}
