@@ -15,6 +15,7 @@
     }
 
     &__container{
+        padding: $padding-lateral;
         @extend .awesomeTeamContainer;
         &___containerIcon{
             @extend .containerIcon;
