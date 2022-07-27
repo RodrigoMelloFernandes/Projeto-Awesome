@@ -20,6 +20,47 @@
     @include alignItems-justifyContent(center, space-between);
     width: 60%;
 }
+
+.containerMenu{
+    margin-right: 5%;
+    @include display-flexDirection(flex, column);
+    @include alignItems-justifyContent(center, center);
+    cursor: pointer;
+    border: 1px solid #DDDDDD;
+    width: 13%;
+    height: 2.5rem;
+    border-radius: 10%;
+}
+
+.menuHamburguerListOpen{
+    visibility: visible;
+    background-color: $Branco;
+    width: 100%;
+    padding: 5%;
+    height: 250px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 70px;
+    transition: all .35s ease-out; 
+    overflow-y: auto;   
+}
+
+.menuHamburguerListClose{
+    visibility: hidden;
+    background-color: $Branco;
+    width: 100%;
+    padding: 5%;
+    height: 1px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 70px;
+    transition: all .35s ease-out;
+    overflow-y: auto;
+}
+
+
 // Header Container End
 
 // WeAreAwesome Containers Start
@@ -29,6 +70,8 @@
     justify-content: space-between;
     width: 100%;
 }
+
+// WeAreAwesome Containers End
 
 .containerIcon{
     width: 18%;
