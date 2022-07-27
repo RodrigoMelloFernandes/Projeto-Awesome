@@ -1,36 +1,58 @@
 import { FaPhoneAlt, FaEnvelope, FaFacebookF, FaTwitter, FaInstagram, FaApple } from 'react-icons/fa';
 import styles from './Header.module.scss';
+import { useState } from 'react';
 
 
 function Header () {
+    const [ menuMobile, setMenuMobile ] = useState(false);
+
     return (
         <header className={styles.header}>
             <nav className={styles.header__menu}>
                 <h2 className={styles.header__menu___title}>Awesome</h2>
 
+                {/* Esse é o container Pai onde vai ficar o Menu Hamburguer */}
+                <div className={styles.containerMenu}
+                    onClick={() => setMenuMobile(!menuMobile)}>
 
-                {/* <div>
-                    <ul>
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">About</a>
-                        </li>
-                        <li>
-                            <a href="#">Team</a>
-                        </li>
-                        <li>
-                            <a href="#">Service</a>
-                        </li>
-                        <li>
-                            <a href="#">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div> */}
+                    {/* Essa é o container Quadrado que envolve o Menu Hamburguer */}
+                    <div className={styles.menuHamburguer}>
+                        <span className={styles.menuHamburguer__span}></span>
+                        <span className={styles.menuHamburguer__span}></span>
+                        <span className={styles.menuHamburguer__span}></span>
+                    </div>
+
+                    {/* Essa é a div com os items da lista do Menu Hamburguer */}
+                    <div className={
+                        menuMobile 
+                        ? `${styles.menuHamburguerListClose}`
+                        : `${styles.menuHamburguerListOpen}`
+                    }>
+                        <ul>
+                            <li className={styles.menuHamburguerListOpen__itemLi}>
+                                <a href="#" className={styles.menuHamburguerListOpen__itemLi___a}>Home</a>
+                            </li>
+                            <li className={styles.menuHamburguerListOpen__itemLi}>
+                                <a href="#" className={styles.menuHamburguerListOpen__itemLi___a}>About</a>
+                            </li>
+                            <li className={styles.menuHamburguerListOpen__itemLi}>
+                                <a href="#" className={styles.menuHamburguerListOpen__itemLi___a}>Team</a>
+                            </li>
+                            <li className={styles.menuHamburguerListOpen__itemLi}>
+                                <a href="#" className={styles.menuHamburguerListOpen__itemLi___a}>Service</a>
+                            </li>
+                            <li className={styles.menuHamburguerListOpen__itemLi}>
+                                <a href="#" className={styles.menuHamburguerListOpen__itemLi___a}>Portfolio</a>
+                            </li>
+                            <li className={styles.menuHamburguerListOpen__itemLi}>
+                                <a href="#" className={styles.menuHamburguerListOpen__itemLi___a}>Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                
             </nav>
       
             <div className={styles.header__contacts}> 

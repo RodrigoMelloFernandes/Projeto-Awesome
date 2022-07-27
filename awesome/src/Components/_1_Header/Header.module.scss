@@ -1,13 +1,113 @@
 @import "../../Sass/styles.scss";
 
 .header {
+    
   @include display-flexDirection(flex, column);
   &__menu {
     background-color: $Branco;
+    @include display-flexDirection(flex, row);
+    @include alignItems-justifyContent(center, space-between);
     &___title {
       @extend .titleHeader;
     }
-  }
+
+    .containerMenu {
+        margin-right: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    
+        border: 1px solid #DDDDDD;
+        width: 13%;
+        height: 2.5rem;
+        border-radius: 10%;
+
+        .menuHamburguer{
+            height: 1.25rem;
+            width: 30px;
+        
+            position: relative;
+
+            &__span{
+                position: absolute;
+                height: .2rem;
+                width: 100%;
+                border-radius: 30px;
+                background: #888888;
+                
+        
+                &:nth-child(1){
+                    top: 0;
+                }
+        
+                &:nth-child(2){
+                    top: 8px;
+                }
+        
+                &:nth-child(3){
+                    top: 16px;
+                }
+            }
+        }
+
+        .menuHamburguerListOpen{
+            visibility: visible;
+            background-color: $Branco;
+            width: 100%;
+            padding: 5%;
+            height: 250px;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 70px;
+            transition: all .35s ease-out; 
+            overflow-y: auto;     
+                
+    
+            &__itemLi {
+                padding: 3% 0;
+                
+    
+                &___a {
+                    @extend .menuLinks;
+                }
+            }
+        }
+
+        .menuHamburguerListClose{
+            visibility: hidden;
+            background-color: $Branco;
+            width: 100%;
+            padding: 5%;
+            height: 1px;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 70px;
+            transition: all .35s ease-out;
+            overflow-y: auto;
+
+            &__itemLi {
+                padding: 2% 0;
+                
+    
+                &___a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 1.25rem;
+                }
+            }
+            
+        }
+
+
+    }
+    
+  
+
+    }
   &__contacts {
     @include display-flexDirection(flex, column);
     padding: $padding-lateral;

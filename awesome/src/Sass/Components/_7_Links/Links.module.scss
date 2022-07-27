@@ -4,3 +4,16 @@
     color: $Azul;
     text-decoration: none;
 }
+
+.menuLinks{
+    text-decoration: none;
+    color: #777;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    &:hover{
+        
+        color: $Azul;
+    }
+}
