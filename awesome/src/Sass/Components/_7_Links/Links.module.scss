@@ -1,5 +1,7 @@
 @import "../../mixins" , "../../variables";
 
+//--------------------Header----------------------------->
+
 .subtitleLinks{
     color: $Azul;
     text-decoration: none;
@@ -12,8 +14,28 @@
     text-transform: uppercase;
     font-weight: bold;
 
+
     &:hover{
-        
-        color: $Azul;
+        color: black;
     }
 }
+
+.socialMediaLinks {
+    font-size: 0.875rem;
+    color: $Branco;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .35s linear;
+    width: 12%;
+    height: 1.2rem;
+    border-radius: 2.5px;
+    &:hover{
+        background-color: $Azul;
+        
+    }
+}
+
+//--------------------Header----------------------------->

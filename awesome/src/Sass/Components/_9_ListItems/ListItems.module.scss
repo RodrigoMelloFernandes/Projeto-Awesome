@@ -1,0 +1,15 @@
+@import "../../mixins" , "../../variables";
+
+.menuHamburguerListOpenListItem{
+    padding: 3% 0;
+    @include for-desktop-only {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }  
+}
+
+.menuHamburguerListCloseListItem{
+    padding: 2% 0;
+    
+}

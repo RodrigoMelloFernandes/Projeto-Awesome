@@ -1,24 +1,28 @@
 @import "../../mixins" , "../../variables";
 
-// Header Container Start
-.containerPhone{
-    @include display-flexDirection(flex, row);
-    @include alignItems-justifyContent(center, space-between);
-    width: 48%;
-    margin-bottom: 5%;
+
+//--------------------Header----------------------------->
+.header{
+    @include display-flexDirection(flex, column);
+    
+    //--------------------Desktop----------------------------->
+    @include for-desktop-only {
+        @include display-flexDirection(flex, column-reverse);
+    }
 }
 
-.containerEmail{
+.menu{
+    background-color: $Branco;
     @include display-flexDirection(flex, row);
     @include alignItems-justifyContent(center, space-between);
-    width: 74%;
-    margin-bottom: 5%;
-}
-
-.containerSocialMedia{
-    @include display-flexDirection(flex, row);
-    @include alignItems-justifyContent(center, space-between);
-    width: 60%;
+    
+    //--------------------Desktop----------------------------->
+    @include for-desktop-only {
+        @include display-flexDirection(flex, row);
+        @include alignItems-justifyContent(center, space-between);
+        padding: 0 2.5%;
+        
+    }
 }
 
 .containerMenu{
@@ -30,15 +34,27 @@
     width: 13%;
     height: 2.5rem;
     border-radius: 10%;
+    //--------------------Tablet----------------------------->
     @include for-tablet-only{
         display: none;
     }
+    //--------------------Desktop----------------------------->
     @include for-desktop-only {
         display: flex;
         width: 100%;
         height: 80px;
         border: none;
         margin: 0;
+    }
+}
+
+.containerMenuHamburguer{
+    height: 1.25rem;
+    width: 30px;        
+    position: relative;
+    //--------------------Desktop----------------------------->
+    @include for-desktop-only {
+        display: none; 
     }
 }
 
@@ -68,7 +84,7 @@
         & > ul {
             @include display-flexDirection(flex, row);
             @include alignItems-justifyContent(center, center);
-            width: 70%;
+            width: 60%;
             
         }
     }
@@ -90,17 +106,72 @@
 }
 
 
-// Header Container End
+.containerContacts{
+    @include display-flexDirection(flex, column);
+        padding: $padding-lateral;
+        //--------------------Desktop----------------------------->
+        @include for-desktop-only {
+        @include display-flexDirection(flex, row);
+        @include alignItems-justifyContent(center, space-between);
+        padding: 1.85% 13% 2.5% 5%;
+        }
+}
 
-// WeAreAwesome Containers Start
+.containerPhone{
+    @include display-flexDirection(flex, row);
+    @include alignItems-justifyContent(center, space-between);
+    width: 48%;
+    margin-bottom: 5%;
+    //--------------------Desktop----------------------------->
+    @include for-desktop-only{
+        margin-bottom: 2.5%;
+        width: 19%;
+    }
+}
+
+.containerEmail{
+    @include display-flexDirection(flex, row);
+    @include alignItems-justifyContent(center, space-between);
+    width: 74%;
+    margin-bottom: 5%;
+    //--------------------Desktop----------------------------->
+    @include for-desktop-only{
+        width: 27%;
+        margin-bottom: 0;
+        @include display-flexDirection(flex, column);
+    }
+}
+
+.containerEmailDesktop{
+    @include display-flexDirection(flex, row);
+    //--------------------Desktop----------------------------->
+    @include for-desktop-only{
+        @include display-flexDirection(flex, row);
+        @include alignItems-justifyContent(center, space-between);
+        width: 100%;
+    }
+}
+
+.containerSocialMedia{
+    @include display-flexDirection(flex, row);
+    @include alignItems-justifyContent(center, space-between);
+    width: 60%;
+    //--------------------Desktop----------------------------->
+    @include for-desktop-only{
+        width: 22%;
+        margin-bottom: 0;
+        @include display-flexDirection(flex, row);
+    }
+}
+//--------------------Header----------------------------->
+
+//--------------------WeAreAwesome----------------------------->
 .container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
 }
-
-// WeAreAwesome Containers End
 
 .containerIcon{
     width: 18%;
@@ -114,17 +185,15 @@
     width: 76%;
     margin-top: 5%;
 }
+//--------------------WeAreAwesome----------------------------->
 
-// WeAreAwesome Containers End
-
-// AwesomeTeam Containers Start
-
+//--------------------AwesomeTeam----------------------------->
 .awesomeTeamContainer{
     @include display-flexDirection(flex, column);
     @include alignItems-justifyContent(start, center);
 }
+//--------------------AwesomeTeam----------------------------->
 
-// AwesomeTeam Containers End
 
 
 

@@ -8,7 +8,7 @@ function Header () {
 
     return (
         <header className={styles.header}>
-            <nav className={styles.header__menu}>
+            <div className={styles.header__menu}>
                 <h2 className={styles.header__menu___title}>Awesome</h2>
                 <div className={styles.containerMenu}
                     onClick={() => setMenuMobile(!menuMobile)}>
@@ -17,7 +17,7 @@ function Header () {
                         <span className={styles.menuHamburguer__span}></span>
                         <span className={styles.menuHamburguer__span}></span>
                     </div>
-                    <div className={
+                    <nav className={
                         menuMobile 
                         ? `${styles.menuHamburguerListClose}`
                         : `${styles.menuHamburguerListOpen}`
@@ -42,9 +42,9 @@ function Header () {
                                 <a href="#" className={styles.menuHamburguerListOpen__itemLi___a}>Contact</a>
                             </li>
                         </ul>
-                    </div>
+                    </nav>
                 </div>  
-            </nav>
+            </div>
       
             <div className={styles.header__contacts}> 
                 <div className={styles.header__contacts___containerPhone}>
@@ -54,15 +54,25 @@ function Header () {
                 </div>
                 <div className={styles.header__contacts___containerEmail}>
                     <FaEnvelope className={styles.header__contacts___containerEmail____emailIcon}/>
-                    <h3 className={styles.header__contacts___containerEmail____title}>Email</h3>
-                    <p className={styles.header__contacts___containerEmail____subtitle}>awesome@company.com</p>
+                    <div className={styles.header__contacts___containerEmail____containerEmailDesktop}>
+                        <h3 className={styles.header__contacts___containerEmail____title}>Email</h3>
+                        <a href="#" className={styles.header__contacts___containerEmail____subtitle}>awesome@company.com</a>
+                    </div>
                 </div>
                 <div className={styles.header__contacts___containerSocialMedia}>
                     <h3 className={styles.header__contacts___containerSocialMedia____title}>Meet us on</h3>
-                    <FaFacebookF className={styles.header__contacts___containerSocialMedia____icon}/>
-                    <FaTwitter className={styles.header__contacts___containerSocialMedia____icon}/>
-                    <FaInstagram className={styles.header__contacts___containerSocialMedia____icon}/>
-                    <FaApple className={styles.header__contacts___containerSocialMedia____icon}/>
+                    <a className={styles.header__contacts___containerSocialMedia____icon} href="#">
+                        <FaFacebookF/>
+                    </a>
+                    <a className={styles.header__contacts___containerSocialMedia____icon} href="#">
+                        <FaTwitter/>
+                    </a>
+                    <a className={styles.header__contacts___containerSocialMedia____icon} href="#">
+                        <FaInstagram />
+                    </a>
+                    <a className={styles.header__contacts___containerSocialMedia____icon} href="#">
+                        <FaApple/>
+                    </a>
                 </div>
             </div>
         </header>

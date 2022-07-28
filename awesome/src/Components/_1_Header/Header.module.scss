@@ -1,25 +1,10 @@
 @import "../../Sass/styles.scss";
 
 .header {
-  @include display-flexDirection(flex, column);
+    @extend .header;
 
-  //--------------------------------------------->
-  @include for-desktop-only {
-    @include display-flexDirection(flex, column-reverse);
-  }
-
-  &__menu {
-
-    background-color: $Branco;
-    @include display-flexDirection(flex, row);
-    @include alignItems-justifyContent(center, space-between);
-
-    @include for-desktop-only {
-        @include display-flexDirection(flex, row);
-        @include alignItems-justifyContent(center, space-between);
-        padding: 0 5%;
-        
-    }
+    &__menu{
+    @extend .menu;
 
     &___title {
       @extend .titleHeader;
@@ -29,16 +14,10 @@
         @extend .containerMenu;
 
         .menuHamburguer{
-            
-            height: 1.25rem;
-            width: 30px;        
-            position: relative;
+            @extend .containerMenuHamburguer;
+        
             &__span{
                 @extend .spanMenuHamburguer;
-            }
-            @include for-desktop-only {
-                display: none;
-                
             }
         }
 
@@ -46,13 +25,7 @@
             @extend .menuHamburguerListOpen;
             
             &__itemLi {
-                padding: 3% 0;
-
-                @include for-desktop-only {
-                    width: 100%;
-                    text-align: center;
-                    padding: 0;
-                }                
+                @extend .menuHamburguerListOpenListItem;              
                 
                 &___a {
                     @extend .menuLinks;
@@ -63,9 +36,10 @@
         .menuHamburguerListClose{
             @extend .menuHamburguerListClose;
             &__itemLi {
-                padding: 2% 0;          
+                @extend .menuHamburguerListCloseListItem;      
                 &___a {
                     @extend .menuLinks;
+                    
                 }
             }
         }
@@ -73,54 +47,51 @@
     
 }
     &__contacts {
-        @include display-flexDirection(flex, column);
-        padding: $padding-lateral;
-        //--------------------------------------------->
-        @include for-desktop-only {
-            @include display-flexDirection(flex, row);
-            @include alignItems-justifyContent(center, space-between);
-            padding: 1% 5%;
-        }
+        @extend .containerContacts;
         
         &___containerPhone {
             @extend .containerPhone;
         
             &____phoneIcon {
             @extend .phoneIcon;
-      }
+        }
         &____title {
             @extend .titleContacts;
-      }
-      &____subtitle {
+        }
+        &____subtitle {
             @extend .subtitlePhone;
-      }
+        }
     }
 
-    &___containerEmail {
+        &___containerEmail {
             @extend .containerEmail;
+            &____containerEmailDesktop{
+                @extend .containerEmailDesktop;
+            }
 
         &____emailIcon {
             @extend .emailIcon;
-    }
+        }
 
-    &____title {
+
+        &____title {
             @extend .titleContacts;
+        }
+
+        &____subtitle {
+            @extend .emailLink;
+        }
     }
 
-    &____subtitle {
-            @extend .subtitleEmail;
-    }
-}
-
-    &___containerSocialMedia {
+        &___containerSocialMedia {
             @extend .containerSocialMedia;
 
-      &____title {
+        &____title {
             @extend .titleContacts;
-      }
+        }
 
-      &____icon {
-        @extend .socialmediaIcon;
+        &____icon {
+        @extend .socialMediaLinks;
       }
     }
   }

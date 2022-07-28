@@ -1,19 +1,38 @@
 @import "../../mixins" , "../../variables";
 
+//--------------------Header----------------------------->
+
 .phoneIcon{
     color: $Azul;
     font-size: 0.875rem;
+    
 }
 
 .emailIcon{
     color: $Azul;
     font-size: 0.875rem;
+    //--------------------Desktop----------------------------->
+    @include for-desktop-only{
+        align-self: start;
+        margin-bottom: 1.5%;
+    }
 }
 
-.socialmediaIcon{
-    font-size: 0.875rem;
+.emailLink{
+    color: #999;
+    font-weight: bold;
+    margin-left: 4%;
+    &:hover{
+        color: #05ffff;
+    }
 }
+
+//--------------------Header----------------------------->
+
+//--------------------OurAwesomeThings----------------------------->
 
 .ourAwesomeThingsIcons{
     font-size: 3.125rem;
 }
+
+//--------------------OurAwesomeThings----------------------------->
