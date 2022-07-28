@@ -2,10 +2,7 @@
 
 //--------------------ourAwesomeThings----------------------------->
 ._5{
-    @include display-flexDirection(flex, column);
-    @include alignItems-justifyContent(center, center);
-    padding: $padding-lateral;
-    margin-bottom: 5%;
+    @extend .ourAwesomeThings;
 
     &__title{
         @extend .titleWeAreAwesome;
@@ -15,19 +12,20 @@
         }
     }
 
+    &__containerDesktop{
+        @extend .containerDesktop;
+    }
+
     &__container{
-        padding: $padding-lateral;
         @extend .awesomeTeamContainer;
+        padding: $padding-lateral;
         &___containerIcon{
             @extend .containerIcon;
-            width: 30%;
-            height: 6rem;
-            margin-bottom: 5%;
+            @extend .containerOurAwesomeThingsIcon;
+            
             &____icon{
                 @extend .ourAwesomeThingsIcons;
             }
-
-            
         }
 
         &___title{
@@ -42,6 +40,10 @@
             font-weight: 300;
             margin-bottom: 10%;
             line-height: 1.2rem;
+            //--------------------Desktop----------------------------->
+            @include for-desktop-only{
+                width: 100%;
+            }
         }
     }
 }
