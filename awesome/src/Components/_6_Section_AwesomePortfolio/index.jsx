@@ -2,9 +2,9 @@ import styles from './AwesomePortfolio.module.scss'
 
 function AwesomePortfolio () {
     return (
-        <section className={styles.awesomeportfolio}>
+        <section className={styles.ap}>
 
-            <h2 className={styles.awesomeportfolio__title}><span className={styles.awesomeportfolio__title___span}>awesome</span> portofolio</h2>
+            <h2 className={styles.ap__title}><span className={styles.ap__title___span}>awesome</span> portofolio</h2>
             
             <div className={styles.img1}></div>
             <div className={styles.img2}></div>

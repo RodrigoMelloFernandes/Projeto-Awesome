@@ -1,6 +1,7 @@
 @import "../../Sass/styles.scss";
 
-.contactAwesome {
+//--------------------contactAwesome----------------------------->
+.c{
     @include display-flexDirection(flex, column);
     @include alignItems-justifyContent(start, center);
     padding: $padding-lateral;
@@ -117,3 +118,5 @@
         font-weight: bold;
     }
 }
+
+//--------------------contactAwesome----------------------------->

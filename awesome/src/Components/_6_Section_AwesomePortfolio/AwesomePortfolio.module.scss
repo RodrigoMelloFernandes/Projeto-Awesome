@@ -1,6 +1,7 @@
 @import "../../Sass/styles.scss";
 
-.awesomeportfolio{
+//--------------------awesomePortfolio----------------------------->
+.ap{
     @include display-flexDirection(flex, column);
     @include alignItems-justifyContent(center, center);
     
@@ -45,5 +46,5 @@
         height: 22rem;
     }
 }
-
+//--------------------awesomePortfolio----------------------------->
 

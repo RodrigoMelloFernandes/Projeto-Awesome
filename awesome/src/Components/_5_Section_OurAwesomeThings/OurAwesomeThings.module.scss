@@ -1,6 +1,7 @@
 @import "../../Sass/styles.scss";
 
-.ourAwesomeThings {
+//--------------------ourAwesomeThings----------------------------->
+.o{
     @include display-flexDirection(flex, column);
     @include alignItems-justifyContent(center, center);
     padding: $padding-lateral;
@@ -44,3 +45,4 @@
         }
     }
 }
+//--------------------ourAwesomeThings----------------------------->

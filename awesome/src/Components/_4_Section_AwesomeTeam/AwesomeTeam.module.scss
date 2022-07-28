@@ -1,6 +1,7 @@
 @import "../../Sass/styles.scss";
 
-.awesomeTeam{
+//--------------------awesomeTeam----------------------------->
+.a{
     @include display-flexDirection(flex, column);
     @include alignItems-justifyContent(center, center);
     padding: $padding-lateral;
@@ -46,3 +47,4 @@
         }
     }
 }
+//--------------------awesomeTeam----------------------------->

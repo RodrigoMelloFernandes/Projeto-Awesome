@@ -1,6 +1,7 @@
 @import '../../Sass/styles.scss';
 
-.main {
+//--------------------Main----------------------------->
+.m{
     background-image: url(../../Images/home-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,3 +30,4 @@
         @extend .buttonGetStarted;
     }
 }
+//--------------------Main----------------------------->
