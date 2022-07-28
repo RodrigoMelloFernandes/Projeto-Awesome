@@ -7,9 +7,9 @@ function Header () {
     const [ menuMobile, setMenuMobile ] = useState(false);
 
     return (
-        <header className={styles.h}>
-            <div className={styles.h__menu}>
-                <h2 className={styles.h__menu___title}>Awesome</h2>
+        <header className={styles._1}>
+            <div className={styles._1__menu}>
+                <h2 className={styles._1__menu___title}>Awesome</h2>
                 <div className={styles.containerMenu}
                     onClick={() => setMenuMobile(!menuMobile)}>
                     <div className={styles.menuHamburguer}>
@@ -46,32 +46,32 @@ function Header () {
                 </div>  
             </div>
       
-            <div className={styles.h__contacts}> 
-                <div className={styles.h__contacts___containerPhone}>
-                    <FaPhoneAlt className={styles.h__contacts___containerPhone____phoneIcon}/>
-                    <h3 className={styles.h__contacts___containerPhone____title}>Phone</h3>
-                    <p className={styles.h__contacts___containerPhone____subtitle}>010-020-0340</p>
+            <div className={styles._1__contacts}> 
+                <div className={styles._1__contacts___containerPhone}>
+                    <FaPhoneAlt className={styles._1__contacts___containerPhone____phoneIcon}/>
+                    <h3 className={styles._1__contacts___containerPhone____title}>Phone</h3>
+                    <p className={styles._1__contacts___containerPhone____subtitle}>010-020-0340</p>
                 </div>
-                <div className={styles.h__contacts___containerEmail}>
-                    <FaEnvelope className={styles.h__contacts___containerEmail____emailIcon}/>
-                    <div className={styles.h__contacts___containerEmail____containerEmailDesktop}>
-                        <h3 className={styles.h__contacts___containerEmail____title}>Email</h3>
-                        <a href="#" className={styles.h__contacts___containerEmail____subtitle}>awesome@company.com</a>
+                <div className={styles._1__contacts___containerEmail}>
+                    <FaEnvelope className={styles._1__contacts___containerEmail____emailIcon}/>
+                    <div className={styles._1__contacts___containerEmail____containerEmailDesktop}>
+                        <h3 className={styles._1__contacts___containerEmail____title}>Email</h3>
+                        <a href="#" className={styles._1__contacts___containerEmail____subtitle}>awesome@company.com</a>
                     </div>
                 </div>
-                <div className={styles.h__contacts___containerSocialMedia}>
-                    <h3 className={styles.h__contacts___containerSocialMedia____title}>Meet us on</h3>
-                    <a className={styles.h__contacts___containerSocialMedia____icon} href="#">
-                        <FaFacebookF/>
+                <div className={styles._1__contacts___containerSocialMedia}>
+                    <h3 className={styles._1__contacts___containerSocialMedia____title}>Meet us on</h3>
+                    <a className={styles._1__contacts___containerSocialMedia____link} href="#">
+                        <FaFacebookF className={styles._1__contacts___containerSocialMedia____link_____icon}/>
                     </a>
-                    <a className={styles.h__contacts___containerSocialMedia____icon} href="#">
-                        <FaTwitter/>
+                    <a className={styles._1__contacts___containerSocialMedia____link} href="#">
+                        <FaTwitter className={styles._1__contacts___containerSocialMedia____link_____icon}/>
                     </a>
-                    <a className={styles.h__contacts___containerSocialMedia____icon} href="#">
-                        <FaInstagram />
+                    <a className={styles._1__contacts___containerSocialMedia____link} href="#">
+                        <FaInstagram className={styles._1__contacts___containerSocialMedia____link_____icon}/>
                     </a>
-                    <a className={styles.h__contacts___containerSocialMedia____icon} href="#">
-                        <FaApple/>
+                    <a className={styles._1__contacts___containerSocialMedia____link} href="#">
+                        <FaApple className={styles._1__contacts___containerSocialMedia____link_____icon}/>
                     </a>
                 </div>
             </div>

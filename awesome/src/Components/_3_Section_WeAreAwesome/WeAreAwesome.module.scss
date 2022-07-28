@@ -1,7 +1,7 @@
 @import "../../Sass/styles.scss";
 
 //--------------------WeAreAwesome----------------------------->
-.w{
+._3{
     @include display-flexDirection(flex, column);
     @include alignItems-justifyContent(center, center);
     padding: $padding-lateral;
