@@ -2,10 +2,7 @@
 
 //--------------------WeAreAwesome----------------------------->
 ._3{
-    @include display-flexDirection(flex, column);
-    @include alignItems-justifyContent(center, center);
-    padding: $padding-lateral;
-    margin-bottom: 20%;
+    @extend .weAreAwesome;
 
     &__title{
         @extend .titleWeAreAwesome;

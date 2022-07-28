@@ -9,181 +9,214 @@
     @include for-desktop-only {
         @include display-flexDirection(flex, column-reverse);
     }
-}
 
-.menu{
-    background-color: $Branco;
-    @include display-flexDirection(flex, row);
-    @include alignItems-justifyContent(center, space-between);
-    
-    //--------------------Desktop----------------------------->
-    @include for-desktop-only {
+    .menu{
+        background-color: $Branco;
         @include display-flexDirection(flex, row);
         @include alignItems-justifyContent(center, space-between);
-        padding: 0 2.5%;
         
+        //--------------------Desktop----------------------------->
+        @include for-desktop-only {
+            @include display-flexDirection(flex, row);
+            @include alignItems-justifyContent(center, space-between);
+            padding: 0 2.5%;
+            
+        }
     }
-}
 
-.containerMenu{
-    margin-right: 5%;
+    .containerMenu{
+        margin-right: 5%;
+        @include display-flexDirection(flex, column);
+        @include alignItems-justifyContent(center, center);
+        cursor: pointer;
+        border: 1px solid #DDDDDD;
+        width: 13%;
+        height: 2.5rem;
+        border-radius: 10%;
+        //--------------------Tablet----------------------------->
+        @include for-tablet-only{
+            display: none;
+        }
+        //--------------------Desktop----------------------------->
+        @include for-desktop-only {
+            display: flex;
+            width: 100%;
+            height: 80px;
+            border: none;
+            margin: 0;
+        }
+    }
+
+    .containerMenuHamburguer{
+        height: 1.25rem;
+        width: 30px;        
+        position: relative;
+        //--------------------Desktop----------------------------->
+        @include for-desktop-only {
+            display: none; 
+        }
+    }
+
+    .menuHamburguerListOpen{
+        visibility: visible;
+        background-color: $Branco;
+        width: 100%;
+        padding: 5%;
+        height: 250px;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 70px;
+        transition: all .35s ease-out; 
+        overflow-y: auto;  
+        @include for-desktop-only{
+            @include display-flexDirection(flex, row);
+            @include alignItems-justifyContent(center, flex-end);
+            visibility: visible;
+            padding: 0;
+            top: 0;
+            overflow-y: unset;
+            position: static;
+            height: 80px;
+            width: 100%;
+    
+            & > ul {
+                @include display-flexDirection(flex, row);
+                @include alignItems-justifyContent(center, center);
+                width: 60%;
+                
+            }
+        }
+    }
+
+    .menuHamburguerListClose{
+        visibility: hidden;
+        background-color: $Branco;
+        width: 100%;
+        padding: 5%;
+        height: 1px;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 70px;
+        transition: all .35s ease-out;
+        overflow-y: auto;
+    
+    }
+
+    .containerContacts{
+        @include display-flexDirection(flex, column);
+            padding: $padding-lateral;
+            //--------------------Desktop----------------------------->
+            @include for-desktop-only {
+            @include display-flexDirection(flex, row);
+            @include alignItems-justifyContent(center, space-between);
+            padding: 1.85% 13% 2.5% 5%;
+            }
+    }
+
+    .containerPhone{
+        @include display-flexDirection(flex, row);
+        @include alignItems-justifyContent(center, space-between);
+        width: 48%;
+        margin-bottom: 5%;
+        //--------------------Desktop----------------------------->
+        @include for-desktop-only{
+            margin-bottom: 2.5%;
+            width: 19%;
+        }
+    }
+
+    .containerEmail{
+        @include display-flexDirection(flex, row);
+        @include alignItems-justifyContent(center, space-between);
+        width: 74%;
+        margin-bottom: 5%;
+        //--------------------Desktop----------------------------->
+        @include for-desktop-only{
+            width: 27%;
+            margin-bottom: 0;
+            @include display-flexDirection(flex, column);
+        }
+    }
+
+    .containerEmailDesktop{
+        @include display-flexDirection(flex, row);
+        //--------------------Desktop----------------------------->
+        @include for-desktop-only{
+            @include display-flexDirection(flex, row);
+            @include alignItems-justifyContent(center, space-between);
+            width: 100%;
+        }
+    }
+
+    .containerSocialMedia{
+        @include display-flexDirection(flex, row);
+        @include alignItems-justifyContent(center, space-between);
+        width: 60%;
+        //--------------------Desktop----------------------------->
+        @include for-desktop-only{
+            width: 22%;
+            margin-bottom: 0;
+            @include display-flexDirection(flex, row);
+        }
+    }
+
+}
+//--------------------Header----------------------------->
+
+//--------------------Main----------------------------->
+.main{
+    background-image: url(../../../Images/home-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 26rem;
+    width: 100%;
     @include display-flexDirection(flex, column);
     @include alignItems-justifyContent(center, center);
-    cursor: pointer;
-    border: 1px solid #DDDDDD;
-    width: 13%;
-    height: 2.5rem;
-    border-radius: 10%;
-    //--------------------Tablet----------------------------->
-    @include for-tablet-only{
-        display: none;
-    }
+    padding: $padding-lateral;
     //--------------------Desktop----------------------------->
-    @include for-desktop-only {
-        display: flex;
-        width: 100%;
-        height: 80px;
-        border: none;
-        margin: 0;
-    }
-}
-
-.containerMenuHamburguer{
-    height: 1.25rem;
-    width: 30px;        
-    position: relative;
-    //--------------------Desktop----------------------------->
-    @include for-desktop-only {
-        display: none; 
-    }
-}
-
-.menuHamburguerListOpen{
-    visibility: visible;
-    background-color: $Branco;
-    width: 100%;
-    padding: 5%;
-    height: 250px;
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: 70px;
-    transition: all .35s ease-out; 
-    overflow-y: auto;  
     @include for-desktop-only{
-        @include display-flexDirection(flex, row);
-        @include alignItems-justifyContent(center, flex-end);
-        visibility: visible;
-        padding: 0;
-        top: 0;
-        overflow-y: unset;
-        position: static;
-        height: 80px;
-        width: 100%;
+        height: 40.62rem;
+    }
 
-        & > ul {
-            @include display-flexDirection(flex, row);
-            @include alignItems-justifyContent(center, center);
-            width: 60%;
+    .containerDesktop{
+        //--------------------Desktop----------------------------->
+        @include for-desktop-only{
+            @include display-flexDirection(flex, column);
+            @include alignItems-justifyContent(start, center);
+            padding-left: 17%;
             
         }
     }
 }
-
-.menuHamburguerListClose{
-    visibility: hidden;
-    background-color: $Branco;
-    width: 100%;
-    padding: 5%;
-    height: 1px;
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: 70px;
-    transition: all .35s ease-out;
-    overflow-y: auto;
-
-}
-
-
-.containerContacts{
-    @include display-flexDirection(flex, column);
-        padding: $padding-lateral;
-        //--------------------Desktop----------------------------->
-        @include for-desktop-only {
-        @include display-flexDirection(flex, row);
-        @include alignItems-justifyContent(center, space-between);
-        padding: 1.85% 13% 2.5% 5%;
-        }
-}
-
-.containerPhone{
-    @include display-flexDirection(flex, row);
-    @include alignItems-justifyContent(center, space-between);
-    width: 48%;
-    margin-bottom: 5%;
-    //--------------------Desktop----------------------------->
-    @include for-desktop-only{
-        margin-bottom: 2.5%;
-        width: 19%;
-    }
-}
-
-.containerEmail{
-    @include display-flexDirection(flex, row);
-    @include alignItems-justifyContent(center, space-between);
-    width: 74%;
-    margin-bottom: 5%;
-    //--------------------Desktop----------------------------->
-    @include for-desktop-only{
-        width: 27%;
-        margin-bottom: 0;
-        @include display-flexDirection(flex, column);
-    }
-}
-
-.containerEmailDesktop{
-    @include display-flexDirection(flex, row);
-    //--------------------Desktop----------------------------->
-    @include for-desktop-only{
-        @include display-flexDirection(flex, row);
-        @include alignItems-justifyContent(center, space-between);
-        width: 100%;
-    }
-}
-
-.containerSocialMedia{
-    @include display-flexDirection(flex, row);
-    @include alignItems-justifyContent(center, space-between);
-    width: 60%;
-    //--------------------Desktop----------------------------->
-    @include for-desktop-only{
-        width: 22%;
-        margin-bottom: 0;
-        @include display-flexDirection(flex, row);
-    }
-}
-//--------------------Header----------------------------->
+//--------------------Main----------------------------->
 
 //--------------------WeAreAwesome----------------------------->
-.container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.containerIcon{
-    width: 18%;
-    height: 3.5rem;
-    border: 1px solid $Branco;
-    @include display-flexDirection(flex, row);
+.weAreAwesome{
+    @include display-flexDirection(flex, column);
     @include alignItems-justifyContent(center, center);
-}
+    padding: $padding-lateral;
+    margin-bottom: 20%;
 
-.containerContent{
-    width: 76%;
-    margin-top: 5%;
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .containerIcon{
+        width: 18%;
+        height: 3.5rem;
+        border: 1px solid $Branco;
+        @include display-flexDirection(flex, row);
+        @include alignItems-justifyContent(center, center);
+    }
+    .containerContent{
+        width: 76%;
+        margin-top: 5%;
+    }
 }
 //--------------------WeAreAwesome----------------------------->
 

@@ -2,17 +2,11 @@
 
 //--------------------Main----------------------------->
 ._2{
-    background-image: url(../../Images/home-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 26rem;
-    width: 100%;
+    @extend .main;
 
-    @include display-flexDirection(flex, column);
-    @include alignItems-justifyContent(center, center);
-
-    padding: $padding-lateral;
-    
+    &__containerDesktop{
+        @extend .containerDesktop;
+    }
 
     &__title{
         @extend .titleMain;
