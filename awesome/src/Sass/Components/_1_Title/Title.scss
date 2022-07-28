@@ -41,6 +41,10 @@
    text-align: center;
    margin: 10% auto 10%;
    line-height: 3rem;
+   //--------------------Desktop----------------------------->
+   @include for-desktop-only{
+        margin: 6% auto 6%; 
+}
 }
 
 .titleWeAreAwesomeContent{

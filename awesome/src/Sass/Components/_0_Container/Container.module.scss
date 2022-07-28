@@ -198,6 +198,20 @@
     @include alignItems-justifyContent(center, center);
     padding: $padding-lateral;
     margin-bottom: 20%;
+    //--------------------Desktop----------------------------->
+    @include for-desktop-only{
+        padding: 0% 4%;
+        @include display-flexDirection(flex, column);
+        @include alignItems-justifyContent(center, center);
+        margin-bottom: 0%;
+    }
+
+    .containerDesktop{
+        @include for-desktop-only{
+            @include display-flexDirection(flex, row);
+            @include alignItems-justifyContent(top, center);
+        } 
+    }
 
     .container{
         display: flex;

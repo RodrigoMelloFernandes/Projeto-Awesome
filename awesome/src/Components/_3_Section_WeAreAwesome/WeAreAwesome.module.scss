@@ -12,6 +12,10 @@
         }
     }
 
+    &__containerDesktop{
+        @extend .containerDesktop;
+    }
+
     &__container{
         @extend .container;
         &___containerIcon{
