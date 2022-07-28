@@ -3,11 +3,23 @@
 .header {
   @include display-flexDirection(flex, column);
 
+  //--------------------------------------------->
+  @include for-desktop-only {
+    @include display-flexDirection(flex, column-reverse);
+  }
+
   &__menu {
 
     background-color: $Branco;
     @include display-flexDirection(flex, row);
     @include alignItems-justifyContent(center, space-between);
+
+    @include for-desktop-only {
+        @include display-flexDirection(flex, row);
+        @include alignItems-justifyContent(center, space-between);
+        padding: 0 5%;
+        
+    }
 
     &___title {
       @extend .titleHeader;
@@ -17,18 +29,31 @@
         @extend .containerMenu;
 
         .menuHamburguer{
+            
             height: 1.25rem;
             width: 30px;        
             position: relative;
             &__span{
                 @extend .spanMenuHamburguer;
             }
+            @include for-desktop-only {
+                display: none;
+                
+            }
         }
 
         .menuHamburguerListOpen{
-            @extend .menuHamburguerListOpen;   
+            @extend .menuHamburguerListOpen;
+            
             &__itemLi {
                 padding: 3% 0;
+
+                @include for-desktop-only {
+                    width: 100%;
+                    text-align: center;
+                    padding: 0;
+                }                
+                
                 &___a {
                     @extend .menuLinks;
                 }
@@ -50,9 +75,17 @@
     &__contacts {
         @include display-flexDirection(flex, column);
         padding: $padding-lateral;
+        //--------------------------------------------->
+        @include for-desktop-only {
+            @include display-flexDirection(flex, row);
+            @include alignItems-justifyContent(center, space-between);
+            padding: 1% 5%;
+        }
+        
         &___containerPhone {
             @extend .containerPhone;
-        &____phoneIcon {
+        
+            &____phoneIcon {
             @extend .phoneIcon;
       }
         &____title {
@@ -87,7 +120,7 @@
       }
 
       &____icon {
-            @extend .socialmediaIcon;
+        @extend .socialmediaIcon;
       }
     }
   }

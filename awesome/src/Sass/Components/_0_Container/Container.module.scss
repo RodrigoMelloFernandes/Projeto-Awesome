@@ -30,6 +30,16 @@
     width: 13%;
     height: 2.5rem;
     border-radius: 10%;
+    @include for-tablet-only{
+        display: none;
+    }
+    @include for-desktop-only {
+        display: flex;
+        width: 100%;
+        height: 80px;
+        border: none;
+        margin: 0;
+    }
 }
 
 .menuHamburguerListOpen{
@@ -43,7 +53,25 @@
     left: 0;
     top: 70px;
     transition: all .35s ease-out; 
-    overflow-y: auto;   
+    overflow-y: auto;  
+    @include for-desktop-only{
+        @include display-flexDirection(flex, row);
+        @include alignItems-justifyContent(center, flex-end);
+        visibility: visible;
+        padding: 0;
+        top: 0;
+        overflow-y: unset;
+        position: static;
+        height: 80px;
+        width: 100%;
+
+        & > ul {
+            @include display-flexDirection(flex, row);
+            @include alignItems-justifyContent(center, center);
+            width: 70%;
+            
+        }
+    }
 }
 
 .menuHamburguerListClose{
@@ -58,6 +86,7 @@
     top: 70px;
     transition: all .35s ease-out;
     overflow-y: auto;
+
 }
 
 
