@@ -1,10 +1,12 @@
 @import "../../mixins" , "../../variables";
 
+//--------------------awesomeBlueSpan----------------------------->
 .span {
     color: $Azul;
     font-weight: bold;
     font-size: 3.2rem;
 }
+//--------------------awesomeBlueSpan----------------------------->
 
 .spanMenuHamburguer {
     position: absolute;
