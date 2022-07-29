@@ -2,21 +2,32 @@
 
 //--------------------contactAwesome----------------------------->
 ._7{
-    @include display-flexDirection(flex, column);
-    @include alignItems-justifyContent(start, center);
-    padding: $padding-lateral;
-    background: #202020;
+    @extend .contactAwesome;
 
     &__title{
-        @extend .titleWeAreAwesome;
+        @extend .titleContactAwesome;
+        
         &___span{
             @extend .span;
             font-size: 2.5rem;
         }
     }
 
+    &__containerDesktop{
+        @extend .containerDesktop;
+        
+    }
+
+    &__containerDesktopInput{
+        @extend .containerDesktopInput;
+    }
+
+    &__containerDesktopAdress{
+        @extend .containerDesktopAdress;
+    }
+
     &__inputTitle{
-        @extend .titleContactAwesome;
+        @extend .titleContactAwesomeInput;
         margin-top: 2.5%;
         margin-bottom: 2.5%;
     }
@@ -41,30 +52,20 @@
     }
 
     &__containerIcon{
-        @include display-flexDirection(flex, column); 
-        width: 100%;      
+        @extend .containerIcon;                    
         
         &___container{
-            @include display-flexDirection(flex, row);
-            align-items: center;
-            
+            @extend .container;
             
             &____box{
-                width: 15%;
-                height: 3rem;
-                border: 1px solid $Branco;
-                @include display-flexDirection(flex, row);
-                @include alignItems-justifyContent(center, center);
-                margin-bottom: 5%;
+                @extend .box;
 
-                
             }
             
             &____subtitle{
                 @extend .subtitleContactAwesome; 
                 
             }
-            
         }
         
         &___subtitleNumber{
@@ -82,35 +83,34 @@
     }
 
     &__socialMediaContainer{
-        @include display-flexDirection(flex, row);
-        width: 90%;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 10%;
+        @extend .socialMediaContainer;
         
         &___socialMediaTitle{
             font-weight: bold;
             text-transform: uppercase;
             margin-bottom: 5%;
+            //--------------------Desktop----------------------------->
+            @include for-desktop-only{
+                margin-bottom: $mb0;
+            }
         }
 
         &___container {
-            width: 15%;
-            height: 3rem;
+            @extend .socialMediaLinks;
+            width: 29%;
+            height: 2.5rem;
             border: 1px solid $Branco;
-            @include display-flexDirection(flex, row);
-            @include alignItems-justifyContent(center, center);
+        }
+
+        &___containerBox{
+            @extend .containerBox;
         }
     } 
     
 }
+
 .copyrightContainer{
-    width: 100%;
-    height: 5rem;
-    background-color: #303030;
-    @include display-flexDirection(flex, row);
-    @include alignItems-justifyContent(center, center);
-    
+    @extend .copyrightContainer;
 
     &__subtitle{
         color: $Branco;

@@ -311,13 +311,14 @@
     @include display-flexDirection(flex, column);
     @include alignItems-justifyContent(center, center);
     margin-bottom: $mb20;
-    padding: $pl2;
     //--------------------Desktop----------------------------->
     @include for-desktop-only{
         margin-bottom: $mb10;
+        padding: $pl2;
     }
 
     .containerDesktop{
+        width: 100%;
         @include for-desktop-only {
             @include display-flexDirection(flex, row);
             width: 100%;
@@ -330,7 +331,113 @@
 
 //--------------------ourAwesomePortfolio----------------------------->
 
+//--------------------contactAwesome----------------------------->
 
+.contactAwesome{
+    @include display-flexDirection(flex, column);
+    @include alignItems-justifyContent(start, center);
+    padding: $padding-lateral;
+    background: #202020;
+    //--------------------Desktop----------------------------->
+    @include for-desktop-only{
+        padding: $pl2;
+        padding-top: 0;
+        
+    }
+
+    .containerDesktop{
+        //--------------------Desktop----------------------------->
+        @include for-desktop-only{
+            @include display-flexDirection(flex, row);
+            @include alignItems-justifyContent(start, space-between);
+            width: 100%;
+        }
+    }
+
+    .containerDesktopInput{
+        //--------------------Desktop----------------------------->
+        @include for-desktop-only{
+            width: 50%
+        
+        }
+    }
+
+    .containerDesktopAdress{
+        //--------------------Desktop----------------------------->
+        @include for-desktop-only{
+            padding-top: 4%;
+            width: 47%;
+        }
+    }
+
+    .containerIcon{
+        @include display-flexDirection(flex, column); 
+        width: 100%;
+    }
+
+    .container{
+        @include display-flexDirection(flex, row);
+        align-items: center;
+        
+    }
+
+    .box{
+        width: 15%;
+        height: 3rem;
+        border: 1px solid $Branco;
+        @include display-flexDirection(flex, row);
+        @include alignItems-justifyContent(center, center);
+        margin-bottom: 5%;
+            @include for-desktop-only{
+                width: 9%;
+                height: 2.5rem;
+        }
+    }
+
+    .socialMediaContainer{
+        @include display-flexDirection(flex, row);
+        width: 90%;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10%;
+        //--------------------Desktop----------------------------->
+        @include for-desktop-only{
+            margin-bottom: $mb0;
+            width: 60%;
+            @include alignItems-justifyContent(center, space-between);
+        }
+    }
+
+    .containerSocial{
+        width: 15%;
+        height: 3rem;
+        border: 1px solid $Branco;
+        @include display-flexDirection(flex, row);
+        @include alignItems-justifyContent(center, center);
+        //--------------------Desktop----------------------------->
+        @include for-desktop-only{
+            width: 12%; 
+        }
+    }
+
+    .containerBox{
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.copyrightContainer{
+    width: 100%;
+    height: 5rem;
+    background-color: #303030;
+    @include display-flexDirection(flex, row);
+    @include alignItems-justifyContent(center, center);
+}
+
+//--------------------contactAwesome----------------------------->
 
 
 
