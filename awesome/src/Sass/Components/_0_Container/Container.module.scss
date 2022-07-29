@@ -373,9 +373,11 @@
     .containerIcon{
         @include display-flexDirection(flex, column); 
         width: 100%;
+        
+        
     }
 
-    .container{
+    .containerIconBox{
         @include display-flexDirection(flex, row);
         align-items: center;
         

@@ -76,4 +76,20 @@
     text-transform: uppercase;
 }
 
+.titleAdress{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5%;
+}
+
+.titleSocialMedia{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5%;
+    //--------------------Desktop----------------------------->
+    @include for-desktop-only{
+        margin-bottom: $mb0;
+    }
+}
+
 //--------------------Footer----------------------------->

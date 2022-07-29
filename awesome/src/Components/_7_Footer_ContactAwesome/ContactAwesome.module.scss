@@ -41,9 +41,7 @@
     }
 
     &__titleAdress{
-        font-weight: bold;
-        text-transform: uppercase;
-        margin-bottom: 5%;
+        @extend .titleAdress;
     }
 
     &__subtitleAdress{
@@ -55,7 +53,7 @@
         @extend .containerIcon;                    
         
         &___container{
-            @extend .container;
+            @extend .containerIconBox;
             
             &____box{
                 @extend .box;
@@ -86,13 +84,7 @@
         @extend .socialMediaContainer;
         
         &___socialMediaTitle{
-            font-weight: bold;
-            text-transform: uppercase;
-            margin-bottom: 5%;
-            //--------------------Desktop----------------------------->
-            @include for-desktop-only{
-                margin-bottom: $mb0;
-            }
+            @extend .titleSocialMedia;
         }
 
         &___container {
@@ -113,9 +105,7 @@
     @extend .copyrightContainer;
 
     &__subtitle{
-        color: $Branco;
-        font-size: .875rem;
-        font-weight: bold;
+        @extend .subtitleCopyRight;
     }
 }
 
