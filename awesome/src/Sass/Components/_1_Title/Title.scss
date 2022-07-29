@@ -21,7 +21,7 @@
     font-size: 3.2rem;
     font-weight: 300;
     width: 100%;
-    margin-bottom: 5%;
+    margin-bottom: $mb5;
     //--------------------Desktop----------------------------->
     @include for-desktop-only{
         width: 74%;
@@ -44,14 +44,14 @@
    //--------------------Desktop----------------------------->
    @include for-desktop-only{
         margin: 6% auto 6%; 
-}
+    }
 }
 
 .titleWeAreAwesomeContent{
     font-size: 1.125rem;
     text-transform: uppercase;
     font-weight: bold;
-    margin-bottom: 10%;
+    margin-bottom: $mb10;
                     
 }
 //--------------------WeAreAwesome----------------------------->

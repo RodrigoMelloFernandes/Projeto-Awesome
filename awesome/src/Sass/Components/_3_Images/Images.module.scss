@@ -5,3 +5,20 @@
     width: 100%;
 }
 //--------------------awesomeTeam----------------------------->
+
+//--------------------awesomePortofolio----------------------------->
+
+.awesomePortfolioImg{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 22rem;
+    //--------------------Desktop----------------------------->
+    @include for-desktop-only{
+        width: 25%;
+        height: 10rem;     
+    }
+
+}
+
+//--------------------awesomePortofolio----------------------------->

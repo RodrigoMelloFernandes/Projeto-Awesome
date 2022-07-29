@@ -43,6 +43,7 @@
             //--------------------Desktop----------------------------->
             @include for-desktop-only{
                 width: 100%;
+                font-size: .8rem;
             }
         }
     }

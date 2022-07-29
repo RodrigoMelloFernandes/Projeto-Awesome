@@ -119,10 +119,10 @@
         @include display-flexDirection(flex, row);
         @include alignItems-justifyContent(center, space-between);
         width: 48%;
-        margin-bottom: 5%;
+        margin-bottom: $mb5;
         //--------------------Desktop----------------------------->
         @include for-desktop-only{
-            margin-bottom: 2.5%;
+            margin-bottom: $mb2;
             width: 19%;
         }
     }
@@ -131,7 +131,7 @@
         @include display-flexDirection(flex, row);
         @include alignItems-justifyContent(center, space-between);
         width: 74%;
-        margin-bottom: 5%;
+        margin-bottom: $mb5;
         //--------------------Desktop----------------------------->
         @include for-desktop-only{
             width: 27%;
@@ -157,7 +157,7 @@
         //--------------------Desktop----------------------------->
         @include for-desktop-only{
             width: 22%;
-            margin-bottom: 0;
+            margin-bottom: $mb0;
             @include display-flexDirection(flex, row);
         }
     }
@@ -197,13 +197,13 @@
     @include display-flexDirection(flex, column);
     @include alignItems-justifyContent(center, center);
     padding: $padding-lateral;
-    margin-bottom: 20%;
+    margin-bottom: $mb20;
     //--------------------Desktop----------------------------->
     @include for-desktop-only{
         padding: 0% 4%;
         @include display-flexDirection(flex, column);
         @include alignItems-justifyContent(center, center);
-        margin-bottom: 5%;
+        margin-bottom: $mb5;
     }
 
     .containerDesktop{
@@ -258,7 +258,7 @@
         @include display-flexDirection(flex, column);
         @include alignItems-justifyContent(start, center);
         box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, .3);
-        margin-bottom: 10%;
+        margin-bottom: $mb10;
         background: #3b3b3b;
         //--------------------Desktop----------------------------->
         @include for-desktop-only{
@@ -273,13 +273,18 @@
     @include display-flexDirection(flex, column);
     @include alignItems-justifyContent(center, center);
     padding: $padding-lateral;
-    margin-bottom: 5%;
+    margin-bottom: $mb5;
+    //--------------------Desktop----------------------------->
+    @include for-desktop-only{
+        margin-bottom: $mb0;
+        padding-bottom: 0;      
+    }
 
     .containerDesktop{
         //--------------------Desktop----------------------------->
         @include for-desktop-only{
             @include display-flexDirection(flex, row);
-            @include alignItems-justifyContent(center, center);      
+            @include alignItems-justifyContent(center, center);       
         }
     }
 
@@ -287,7 +292,7 @@
         border: 1px solid $Branco;
         width: 30%;
         height: 5rem;
-        margin-bottom: 5%;
+        margin-bottom: $mb5;
         @include display-flexDirection(flex, column);
         @include alignItems-justifyContent(center, center);
         //--------------------Desktop----------------------------->
@@ -299,6 +304,31 @@
     }
 }
 //--------------------ourAwesomeThings----------------------------->
+
+//--------------------ourAwesomePortfolio----------------------------->
+
+.ourAwesomePortfolio{
+    @include display-flexDirection(flex, column);
+    @include alignItems-justifyContent(center, center);
+    margin-bottom: $mb20;
+    padding: $pl2;
+    //--------------------Desktop----------------------------->
+    @include for-desktop-only{
+        margin-bottom: $mb10;
+    }
+
+    .containerDesktop{
+        @include for-desktop-only {
+            @include display-flexDirection(flex, row);
+            width: 100%;
+            flex-wrap: wrap;
+
+        }
+    }
+    
+}
+
+//--------------------ourAwesomePortfolio----------------------------->
 
 
 
