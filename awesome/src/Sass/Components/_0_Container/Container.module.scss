@@ -218,6 +218,7 @@
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
+        
     }
 
     .containerIcon{
@@ -263,6 +264,7 @@
         //--------------------Desktop----------------------------->
         @include for-desktop-only{
            width: 22%;
+           
         }
     }
 }
