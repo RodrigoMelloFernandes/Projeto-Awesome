@@ -23,23 +23,51 @@
 
     &__img1{
         background-image: url(../../Images/portfolio-img1.jpg);
-        @extend .awesomePortfolioImg;
+        @extend .awesomePortfolioImg;    
     }
     
     &__img2{
         background-image: url(../../Images/portfolio-img2.jpg);
         @extend .awesomePortfolioImg;
+        
     }
     
     &__img3{
         background-image: url(../../Images/portfolio-img3.jpg);
         @extend .awesomePortfolioImg;
+        
     }
     
     &__img4{
         background-image: url(../../Images/portfolio-img4.jpg);
         @extend .awesomePortfolioImg;
-    } 
+        
+    }
+
+    &__img___containerOverlay{
+        opacity: 0;
+        height : 10rem;
+        padding : 5%;
+        transition: all .50s ease-out;
+        &:hover{
+            opacity: .9;
+            background-color: rgba(40, 167, 233, 0.7);
+        }
+        
+        &____title{
+            @extend .titleAwesomePortfolio;
+            padding: 1%;
+        }
+    
+        &____subtitle{
+            @extend .subtitleAwesomePortfolio;
+        }
+    
+        &____button{
+            @extend .buttonAwesomePortfolio;
+        }
+    }
+    
         
 }
 //--------------------awesomePortfolio----------------------------->
