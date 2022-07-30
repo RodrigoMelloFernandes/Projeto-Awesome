@@ -3,7 +3,6 @@ import teamimg2 from '../../Images/team-img2.jpg';
 import teamimg3 from '../../Images/team-img3.jpg';
 import teamimg4 from '../../Images/team-img4.jpg';
 import styles from './AwesomeTeam.module.scss';
-
 import { motion } from 'framer-motion';
 
 function AwesomeTeam () {

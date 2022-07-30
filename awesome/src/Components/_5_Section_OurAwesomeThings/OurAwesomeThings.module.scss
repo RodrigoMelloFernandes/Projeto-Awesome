@@ -17,10 +17,10 @@
     }
 
     &__container{
-        @extend .awesomeTeamContainer;
+        @extend .ourAwesomeThingsContainer;
         padding: $padding-lateral;
         &___containerIcon{
-            @extend .containerIcon;
+            
             @extend .containerOurAwesomeThingsIcon;
             
             &____icon{

@@ -1,5 +1,5 @@
 import styles from './Main.module.scss';
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
  
 function Main () {
     

@@ -1,4 +1,5 @@
-import styles from './AwesomePortfolio.module.scss'
+import styles from './AwesomePortfolio.module.scss';
+import { motion } from 'framer-motion';
 
 
 function AwesomePortfolio () {
