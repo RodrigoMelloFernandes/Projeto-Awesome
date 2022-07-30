@@ -9,7 +9,7 @@ import ContactAwesome from './Components/_7_Footer_ContactAwesome';
 import { AnimateSharedLayout } from "framer-motion";
 
 function App() {
-  return (
+    return (
     <>
       <AnimateSharedLayout>
       <Header/>
