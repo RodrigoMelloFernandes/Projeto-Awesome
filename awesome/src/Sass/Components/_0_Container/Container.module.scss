@@ -283,8 +283,7 @@
 .ourAwesomeThings{
     @include display-flexDirection(flex, column);
     @include alignItems-justifyContent(center, center);
-    padding: $padding-lateral;
-    padding-bottom: 0;
+    
     margin-bottom: $mb5;
     //--------------------Desktop----------------------------->
     @include for-desktop-only{
@@ -297,16 +296,17 @@
         //--------------------Desktop----------------------------->
         @include for-desktop-only{
             @include display-flexDirection(flex, row);
-            @include alignItems-justifyContent(center, center);       
+            @include alignItems-justifyContent(center, center);  
+                
         }
     }
 
     .ourAwesomeThingsContainer{
         @include display-flexDirection(flex, column);
         @include alignItems-justifyContent(start, center);
-        // box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, .3);
+        padding: 15%;
+        padding-bottom: 0;
         margin-bottom: $mb10;
-        // background: #3b3b3b;
         &:nth-child(2){
             background: #505050;
         }
@@ -319,8 +319,8 @@
 
     .containerOurAwesomeThingsIcon{
         border: 1px solid $Branco;
-        width: 30%;
-        height: 5rem;
+        width: 42%;
+        height: 6rem;
         margin-bottom: $mb5;
         @include display-flexDirection(flex, column);
         @include alignItems-justifyContent(center, center);
