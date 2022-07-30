@@ -45,14 +45,7 @@
     }
 
     &__img___containerOverlay{
-        opacity: 0;
-        height : 10rem;
-        padding : 5%;
-        transition: all .50s ease-out;
-        &:hover{
-            opacity: .9;
-            background-color: rgba(40, 167, 233, 0.7);
-        }
+        @extend .containerOverlay;
         
         &____title{
             @extend .titleAwesomePortfolio;

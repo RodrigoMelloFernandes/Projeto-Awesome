@@ -43,7 +43,7 @@
    line-height: 3rem;
    //--------------------Desktop----------------------------->
    @include for-desktop-only{
-        margin: 15% auto 15%;
+        margin: 6% auto 6%;
     }
 }
 
@@ -59,10 +59,19 @@
 //--------------------AwesomePortfolio----------------------------->
 
 .titleAwesomePortfolio{
+    margin-top: $mb10;
     font-size: 1.125rem;
     color: $Branco;
     font-weight: bold;
     margin-bottom: $mb10;
+    //--------------------Desktop----------------------------->
+    @include for-desktop-only{
+        font-size: 1.125rem;
+        color: $Branco;
+        font-weight: bold;
+        margin-bottom: $mb5;
+        margin-top: 0;
+    }
 }
 
 //--------------------AwesomePortfolio----------------------------->

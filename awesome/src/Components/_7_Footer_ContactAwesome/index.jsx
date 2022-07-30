@@ -1,14 +1,23 @@
 import { FaPhone, FaRegEnvelope, FaMapMarkerAlt,  FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 import styles from './ContactAwesome.module.scss';
+import { motion } from 'framer-motion';
 
 function ContactAwesome () {
     return (
         <>
         <footer className={styles._7}>
-            <h2 className={styles._7__title}>contact <span className={styles._7__title___span}>awesome</span></h2>
+            <motion.h2 className={styles._7__title}
+                initial={{ scale : 0}}
+                animate={{ scale: [ .3, 1.05 , .9, 1] }}
+                transition={{ duration : 1.5}}
+            >contact <span className={styles._7__title___span}>awesome</span></motion.h2>
 
             <div className={styles._7__containerDesktop}>
-                <div className={styles._7__containerDesktopInput}>
+                <motion.div className={styles._7__containerDesktopInput}
+                    initial={{ x: "-50px" , opacity : 0}}
+                    animate={{ x: 0 , opacity : 1}}
+                    transition={{ duration : 1}}
+                >
                     <h3 className={styles._7__inputTitle}>name</h3>
                     <input className={styles._7__input} type="text" />
                     <h3 className={styles._7__inputTitle}>email</h3>
@@ -16,9 +25,13 @@ function ContactAwesome () {
                     <h3 className={styles._7__inputTitle}>message</h3>
                     <input className={styles._7__input} type="text" />
                     <button className={styles._7__button}>Enviar</button>
-                </div>
+                </motion.div>
 
-                <div className={styles._7__containerDesktopAdress}>
+                <motion.div className={styles._7__containerDesktopAdress}
+                    initial={{ x: "50px" , opacity : 0}}
+                    animate={{ x: 0 , opacity : 1}}
+                    transition={{ duration : 1}}
+                >
                     <h2 className={styles._7__titleAdress}>our adress</h2>
                     <p className={styles._7__subtitleAdress}>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.</p>
                     
@@ -54,12 +67,16 @@ function ContactAwesome () {
                             <a href="#" className={styles._7__socialMediaContainer___container}><FaInstagram/></a>
                         </div>
                     </div>
-                    </div>
+                    </motion.div>
                 </div>
 
             </footer>
             <div className={styles.copyrightContainer}>
-                <p className={styles.copyrightContainer__subtitle}>Copyright © 2084 Company Name</p>  
+                <motion.p className={styles.copyrightContainer__subtitle}
+                    initial={{ scale : 0}}
+                    animate={{ scale: [ .3, 1.05 , .9, 1] }}
+                    transition={{ duration : 1.5}}
+                >Copyright © 2084 Company Name</motion.p>  
             </div>
         
         </>

@@ -17,6 +17,9 @@ function AwesomeTeam () {
 
             <div className={styles._4__containerDesktop}>
                 <motion.div className={styles._4__container}
+                    initial={{ opacity : 0}}
+                    animate={{ opacity : 1}}
+                    transition={{ delay : .5, transition: .5}}
                     whileHover={{ opacity: .3, transition: 1, y : -5}}
                 >
                     <img className={styles._4__container___img} src={teamimg1} alt="teamimg1" />
@@ -25,6 +28,9 @@ function AwesomeTeam () {
                     <p className={styles._4__container___content}>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molest.</p>
                 </motion.div>
                 <motion.div className={styles._4__container}
+                    initial={{ opacity : 0}}
+                    animate={{ opacity : 1}}
+                    transition={{ delay : 1 , transition: .5}}
                     whileHover={{ opacity: .3, transition: 1, y : -5}}
                 >
                     <img className={styles._4__container___img} src={teamimg2} alt="teamimg2" />
@@ -33,6 +39,9 @@ function AwesomeTeam () {
                     <p className={styles._4__container___content}>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molest.</p>
                 </motion.div>
                 <motion.div className={styles._4__container}
+                    initial={{ opacity : 0}}
+                    animate={{ opacity : 1}}
+                    transition={{ delay : .5 , transition: .5}}
                     whileHover={{ opacity: .3, transition: 1, y : -5}}
                 >
                     <img className={styles._4__container___img} src={teamimg3} alt="teamimg3" />
@@ -41,6 +50,9 @@ function AwesomeTeam () {
                     <p className={styles._4__container___content}>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molest.</p>
                 </motion.div>
                 <motion.div className={styles._4__container}
+                    initial={{ opacity : 0}}
+                    animate={{ opacity : 1}}
+                    transition={{ delay : 1 , transition: .5}}
                     whileHover={{ opacity: .3, transition: 1, y : -5}}
                 >
                     <img className={styles._4__container___img} src={teamimg4} alt="teamimg4" />

@@ -5,6 +5,9 @@
 .subtitleLinks{
     color: $Azul;
     text-decoration: none;
+    &:hover{
+        color: #05ffff;
+    }
 }
 
 .menuLinks{

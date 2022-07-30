@@ -28,42 +28,42 @@ function AwesomePortfolio () {
                         <div className={styles._6__img___containerOverlay}>
                             <h4 className={styles._6__img___containerOverlay____title}>Project Two</h4>
                             <p className={styles._6__img___containerOverlay____subtitle}>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
-                            <a className={styles._6__img___containerOverlay___button} href="#">DETAIL</a>
+                            <a className={styles._6__img___containerOverlay____button} href="#">DETAIL</a>
                         </div>
                     </div>
                     <div className={styles._6__img3}>
                         <div className={styles._6__img___containerOverlay}>
                             <h4 className={styles._6__img___containerOverlay____title}>Project Three</h4>
                             <p className={styles._6__img___containerOverlay____subtitle}>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
-                            <a className={styles._6__img___containerOverlay___button} href="#">DETAIL</a>
+                            <a className={styles._6__img___containerOverlay____button} href="#">DETAIL</a>
                         </div>
                     </div>
                     <div className={styles._6__img4}>
                         <div className={styles._6__img___containerOverlay}>
                             <h4 className={styles._6__img___containerOverlay____title}>Project Four</h4>
                             <p className={styles._6__img___containerOverlay____subtitle}>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
-                            <a className={styles._6__img___containerOverlay___button} href="#">DETAIL</a>
+                            <a className={styles._6__img___containerOverlay____button} href="#">DETAIL</a>
                         </div>
                     </div>
                     <div className={styles._6__img3}>
                         <div className={styles._6__img___containerOverlay}>
                             <h4 className={styles._6__img___containerOverlay____title}>Project Five</h4>
                             <p className={styles._6__img___containerOverlay____subtitle}>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
-                            <a className={styles._6__img___containerOverlay___button} href="#">DETAIL</a>
+                            <a className={styles._6__img___containerOverlay____button} href="#">DETAIL</a>
                         </div>
                     </div>
                     <div className={styles._6__img4}>
                         <div className={styles._6__img___containerOverlay}>
                             <h4 className={styles._6__img___containerOverlay____title}>Project Six</h4>
                             <p className={styles._6__img___containerOverlay____subtitle}>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
-                            <a className={styles._6__img___containerOverlay___button} href="#">DETAIL</a>
+                            <a className={styles._6__img___containerOverlay____button} href="#">DETAIL</a>
                         </div>
                     </div>
                     <div className={styles._6__img2}>
                         <div className={styles._6__img___containerOverlay}>
                             <h4 className={styles._6__img___containerOverlay____title}>Project Seven</h4>
                             <p className={styles._6__img___containerOverlay____subtitle}>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
-                            <a className={styles._6__img___containerOverlay___button} href="#">DETAIL</a>
+                            <a className={styles._6__img___containerOverlay____button} href="#">DETAIL</a>
                         </div>
                     </div>
                     <div className={styles._6__img1}>

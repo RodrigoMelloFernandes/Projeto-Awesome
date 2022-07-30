@@ -33,6 +33,8 @@
         width: 13%;
         height: 2.5rem;
         border-radius: 10%;
+        
+
         //--------------------Tablet----------------------------->
         @include for-tablet-only{
             display: none;
@@ -44,6 +46,7 @@
             height: 80px;
             border: none;
             margin: 0;
+            
         }
     }
 
@@ -68,7 +71,8 @@
         left: 0;
         top: 70px;
         transition: all .35s ease-out; 
-        overflow-y: auto;  
+        overflow-y: auto;
+        
         @include for-desktop-only{
             @include display-flexDirection(flex, row);
             @include alignItems-justifyContent(center, flex-end);
@@ -79,6 +83,8 @@
             position: static;
             height: 80px;
             width: 100%;
+            
+            
     
             & > ul {
                 @include display-flexDirection(flex, row);
@@ -101,6 +107,7 @@
         top: 70px;
         transition: all .35s ease-out;
         overflow-y: auto;
+        
     
     }
 
@@ -265,6 +272,7 @@
         //--------------------Desktop----------------------------->
         @include for-desktop-only{
            width: 22%;
+           margin-bottom: $mb5; 
            
         }
     }
@@ -276,11 +284,13 @@
     @include display-flexDirection(flex, column);
     @include alignItems-justifyContent(center, center);
     padding: $padding-lateral;
+    padding-bottom: 0;
     margin-bottom: $mb5;
     //--------------------Desktop----------------------------->
     @include for-desktop-only{
         margin-bottom: $mb0;
-        padding-bottom: 0;      
+        padding-top: 0;
+            
     }
 
     .containerDesktop{
@@ -303,7 +313,7 @@
         //--------------------Desktop----------------------------->
         @include for-desktop-only{
            width: 34%;
-           
+           margin-bottom: 30px;
         }
     }
 
@@ -334,6 +344,7 @@
     @include for-desktop-only{
         margin-bottom: $mb10;
         padding: $pl2;
+        padding-top: 0;
     }
 
     .containerDesktop{
@@ -343,6 +354,28 @@
             width: 100%;
             flex-wrap: wrap;
 
+        }
+    }
+
+    .containerOverlay{
+        padding: 5%;
+        height: 16rem;
+        opacity: 0;
+        transition: all .50s ease-out;
+        &:hover{
+            opacity: .9;
+            background-color: rgba(40, 167, 233, 0.7);
+        }
+        //--------------------Desktop----------------------------->
+        @include for-desktop-only{
+            opacity: 0;
+            height : 10rem;
+            padding : 5%;
+            transition: all .50s ease-out;
+            &:hover{
+                opacity: .9;
+                background-color: rgba(40, 167, 233, 0.7);
+            }
         }
     }
     
