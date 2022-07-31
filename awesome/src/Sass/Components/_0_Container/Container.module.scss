@@ -22,6 +22,7 @@
             @include display-flexDirection(flex, row);
             @include alignItems-justifyContent(center, space-between);
             padding: 0 2.5%;
+            position: static;
             
         }
     }

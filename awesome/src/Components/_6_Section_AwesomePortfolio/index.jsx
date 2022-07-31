@@ -1,4 +1,4 @@
-import styles from './AwesomePortfolio.module.scss';
+import styles from './_6_.module.scss';
 import { motion } from 'framer-motion';
 
 
@@ -31,115 +31,115 @@ function AwesomePortfolio () {
 
 
     return (
-        <section className={styles._6}>
+        <section className={styles.awesomePortfolio}>
 
-            <motion.h2 className={styles._6__title}
+            <motion.h2 className={styles.awesomePortfolio__title}
                 initial={"offscreen"}
                 whileInView={"onscreen"}
                 viewport={{once: true, amount: 0.5}}
                 variants={h2Variants}
-            ><span className={styles._6__title___span}>awesome</span> portofolio</motion.h2>
+            ><span className={styles.awesomePortfolio__title___span}>awesome</span> portofolio</motion.h2>
             
-                <div className={styles._6__containerDesktop}
+                <div className={styles.awesomePortfolio__containerDesktop}
                     initial={"offscreen"}
                     whileInView={"onscreen"}
                     viewport={{once: true, amount: 0.5}}
                     variants={containerChildrenVariants}
                 >
-                    <motion.div className={styles._6__img1}
+                    <motion.div className={styles.awesomePortfolio__img1}
                     initial={"offscreen"}
                     whileInView={"onscreen"}
                     viewport={{once: true, amount: 0.5}}
                     variants={containerChildrenVariants}
                     >
-                        <div className={styles._6__img___containerOverlay}>
-                            <h4 className={styles._6__img___containerOverlay____title}>Project One</h4>
-                            <p className={styles._6__img___containerOverlay____subtitle}>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
-                            <a className={styles._6__img___containerOverlay____button} href="#">DETAIL</a>
+                        <div className={styles.awesomePortfolio__img___containerOverlay}>
+                            <h4 className={styles.awesomePortfolio__img___containerOverlay____title}>Project One</h4>
+                            <p className={styles.awesomePortfolio__img___containerOverlay____subtitle}>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
+                            <a className={styles.awesomePortfolio__img___containerOverlay____button} href="#">DETAIL</a>
                         </div>
                     </motion.div>
-                    <motion.div className={styles._6__img2}
+                    <motion.div className={styles.awesomePortfolio__img2}
                     initial={"offscreen"}
                     whileInView={"onscreen"}
                     viewport={{once: true, amount: 0.5}}
                     variants={containerChildrenVariants}
                     >
-                        <div className={styles._6__img___containerOverlay}>
-                            <h4 className={styles._6__img___containerOverlay____title}>Project Two</h4>
-                            <p className={styles._6__img___containerOverlay____subtitle}>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
-                            <a className={styles._6__img___containerOverlay____button} href="#">DETAIL</a>
+                        <div className={styles.awesomePortfolio__img___containerOverlay}>
+                            <h4 className={styles.awesomePortfolio__img___containerOverlay____title}>Project Two</h4>
+                            <p className={styles.awesomePortfolio__img___containerOverlay____subtitle}>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
+                            <a className={styles.awesomePortfolio__img___containerOverlay____button} href="#">DETAIL</a>
                         </div>
                     </motion.div>
-                    <motion.div className={styles._6__img3}
+                    <motion.div className={styles.awesomePortfolio__img3}
                     initial={"offscreen"}
                     whileInView={"onscreen"}
                     viewport={{once: true, amount: 0.5}}
                     variants={containerChildrenVariants}
                     >
-                        <div className={styles._6__img___containerOverlay}>
-                            <h4 className={styles._6__img___containerOverlay____title}>Project Three</h4>
-                            <p className={styles._6__img___containerOverlay____subtitle}>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
-                            <a className={styles._6__img___containerOverlay____button} href="#">DETAIL</a>
+                        <div className={styles.awesomePortfolio__img___containerOverlay}>
+                            <h4 className={styles.awesomePortfolio__img___containerOverlay____title}>Project Three</h4>
+                            <p className={styles.awesomePortfolio__img___containerOverlay____subtitle}>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
+                            <a className={styles.awesomePortfolio__img___containerOverlay____button} href="#">DETAIL</a>
                         </div>
                     </motion.div>
-                    <motion.div className={styles._6__img4}
+                    <motion.div className={styles.awesomePortfolio__img4}
                     initial={"offscreen"}
                     whileInView={"onscreen"}
                     viewport={{once: true, amount: 0.5}}
                     variants={containerChildrenVariants}
                     >
-                        <div className={styles._6__img___containerOverlay}>
-                            <h4 className={styles._6__img___containerOverlay____title}>Project Four</h4>
-                            <p className={styles._6__img___containerOverlay____subtitle}>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
-                            <a className={styles._6__img___containerOverlay____button} href="#">DETAIL</a>
+                        <div className={styles.awesomePortfolio__img___containerOverlay}>
+                            <h4 className={styles.awesomePortfolio__img___containerOverlay____title}>Project Four</h4>
+                            <p className={styles.awesomePortfolio__img___containerOverlay____subtitle}>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
+                            <a className={styles.awesomePortfolio__img___containerOverlay____button} href="#">DETAIL</a>
                         </div>
                     </motion.div>
-                    <motion.div className={styles._6__img3}
+                    <motion.div className={styles.awesomePortfolio__img3}
                     initial={"offscreen"}
                     whileInView={"onscreen"}
                     viewport={{once: true, amount: 0.5}}
                     variants={containerChildrenVariants}
                     >
-                        <div className={styles._6__img___containerOverlay}>
-                            <h4 className={styles._6__img___containerOverlay____title}>Project Five</h4>
-                            <p className={styles._6__img___containerOverlay____subtitle}>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
-                            <a className={styles._6__img___containerOverlay____button} href="#">DETAIL</a>
+                        <div className={styles.awesomePortfolio__img___containerOverlay}>
+                            <h4 className={styles.awesomePortfolio__img___containerOverlay____title}>Project Five</h4>
+                            <p className={styles.awesomePortfolio__img___containerOverlay____subtitle}>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
+                            <a className={styles.awesomePortfolio__img___containerOverlay____button} href="#">DETAIL</a>
                         </div>
                     </motion.div>
-                    <motion.div className={styles._6__img4}
+                    <motion.div className={styles.awesomePortfolio__img4}
                     initial={"offscreen"}
                     whileInView={"onscreen"}
                     viewport={{once: true, amount: 0.5}}
                     variants={containerChildrenVariants}
                     >
-                        <div className={styles._6__img___containerOverlay}>
-                            <h4 className={styles._6__img___containerOverlay____title}>Project Six</h4>
-                            <p className={styles._6__img___containerOverlay____subtitle}>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
-                            <a className={styles._6__img___containerOverlay____button} href="#">DETAIL</a>
+                        <div className={styles.awesomePortfolio__img___containerOverlay}>
+                            <h4 className={styles.awesomePortfolio__img___containerOverlay____title}>Project Six</h4>
+                            <p className={styles.awesomePortfolio__img___containerOverlay____subtitle}>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
+                            <a className={styles.awesomePortfolio__img___containerOverlay____button} href="#">DETAIL</a>
                         </div>
                     </motion.div>
-                    <motion.div className={styles._6__img2}
+                    <motion.div className={styles.awesomePortfolio__img2}
                     initial={"offscreen"}
                     whileInView={"onscreen"}
                     viewport={{once: true, amount: 0.5}}
                     variants={containerChildrenVariants}
                     >
-                        <div className={styles._6__img___containerOverlay}>
-                            <h4 className={styles._6__img___containerOverlay____title}>Project Seven</h4>
-                            <p className={styles._6__img___containerOverlay____subtitle}>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
-                            <a className={styles._6__img___containerOverlay____button} href="#">DETAIL</a>
+                        <div className={styles.awesomePortfolio__img___containerOverlay}>
+                            <h4 className={styles.awesomePortfolio__img___containerOverlay____title}>Project Seven</h4>
+                            <p className={styles.awesomePortfolio__img___containerOverlay____subtitle}>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
+                            <a className={styles.awesomePortfolio__img___containerOverlay____button} href="#">DETAIL</a>
                         </div>
                     </motion.div>
-                    <motion.div className={styles._6__img1}
+                    <motion.div className={styles.awesomePortfolio__img1}
                     initial={"offscreen"}
                     whileInView={"onscreen"}
                     viewport={{once: true, amount: 0.5}}
                     variants={containerChildrenVariants}
                     >
-                        <div className={styles._6__img___containerOverlay}>
-                            <h4 className={styles._6__img___containerOverlay____title}>Project Eight</h4>
-                            <p className={styles._6__img___containerOverlay____subtitle}>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
-                            <a className={styles._6__img___containerOverlay____button} href="#">DETAIL</a>
+                        <div className={styles.awesomePortfolio__img___containerOverlay}>
+                            <h4 className={styles.awesomePortfolio__img___containerOverlay____title}>Project Eight</h4>
+                            <p className={styles.awesomePortfolio__img___containerOverlay____subtitle}>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
+                            <a className={styles.awesomePortfolio__img___containerOverlay____button} href="#">DETAIL</a>
                         </div>
                     </motion.div>
                 </div>
