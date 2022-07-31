@@ -1,13 +1,33 @@
 import { FaPhoneAlt, FaEnvelope, FaFacebookF, FaTwitter, FaInstagram, FaApple } from 'react-icons/fa';
 import styles from './Header.module.scss';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 
 function Header () {
     const [ menuMobile, setMenuMobile ] = useState(false);
+    const cardVariants = {
+        offscreen: {
+          opacity : 0
+        },
+        onscreen: {
+          opacity : 1,
+          transition: {
+            type: "tween",
+            bounce: 0.4,
+            duration: 1.5,
+            // delay: .1
+          }
+        }
+      };
 
     return (
-        <header className={styles._1}>
+        <motion.header className={styles._1}
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: true, amount: 0.8 }}
+            variants={cardVariants}
+        >
             <div className={styles._1__menu}>
                 <h2 className={styles._1__menu___title}>Awesome</h2>
                 <div className={styles.containerMenu}
@@ -75,7 +95,7 @@ function Header () {
                     </a>
                 </div>
             </div>
-        </header>
+        </motion.header>
     )
 }
 

@@ -1,5 +1,6 @@
 @import '../src/Sass/styles.scss';
 
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -29,10 +30,11 @@ display: block;
 body {
 line-height: 1;
 background: #202020;
-// background: #3b3b3b;
 color: $Branco;
 font-family: 'Open Sans', sans-serif;
 font-weight: 300;
+
+
 }
 ol, ul {
 list-style: none;

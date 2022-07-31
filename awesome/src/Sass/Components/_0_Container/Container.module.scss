@@ -304,9 +304,10 @@
     .ourAwesomeThingsContainer{
         @include display-flexDirection(flex, column);
         @include alignItems-justifyContent(start, center);
-        padding: 15%;
+        // padding: 15%;
         padding-bottom: 0;
         margin-bottom: $mb10;
+        
         &:nth-child(2){
             background: #505050;
         }

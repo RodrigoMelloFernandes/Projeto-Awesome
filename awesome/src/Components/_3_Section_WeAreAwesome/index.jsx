@@ -3,22 +3,76 @@ import styles from './WeAreAwesome.module.scss';
 import { motion } from 'framer-motion';
 
 function WeAreAwesome () {
+    const h2Variants = {
+        offscreen: {
+            scale : 0
+        },
+        onscreen : {
+            scale : [ .3, 1.05 , .9, 1],
+            transition : 1.5,
+            delay : 1.5
+        }
+    }
+
+    const leftContainerVariants = {
+        offscreen : { 
+            x : "-50px",
+            opacity : 0},
+        onscreen: { 
+            x : 0 , 
+            opacity : 1,
+            transition : {
+                type : "tween",
+                duration: 1,
+                delay: .2
+        }}
+    }
+
+    const bottomContainerVariants = {
+        offscreen : { 
+            y : "50px",
+            opacity : 0},
+        onscreen: { 
+            y : 0 , 
+            opacity : 1,
+            transition : {
+                type : "tween",
+                duration: 1,
+                delay: .2
+        }}
+    }
+
+    const rightContainerVariants = {
+        offscreen : { 
+            x : "50px",
+            opacity : 0},
+        onscreen: { 
+            x : 0 , 
+            opacity : 1,
+            transition : {
+                type : "tween",
+                duration: 1,
+                delay: .2
+        }}
+    }
 
     return (
         <section className={styles._3}>
             <motion.h2
-                initial={{ scale: 0}}
-                animate={{ scale: [ .3, 1.05 , .9, 1] }}
-                transition={{ duration : 1.5}}
+                initial={"offscreen"}
+                whileInView={"onscreen"}
+                viewport={{once: true, amount: 0.5}}
+                variants={h2Variants}
                 className={styles._3__title}
             >We are <span className={styles._3__title___span}>Awesome</span>
             </motion.h2>
             
             <div className={styles._3__containerDesktop}>
                 <motion.div className={styles._3__container}
-                    initial={{ x: "-50px" , opacity : 0}}
-                    animate={{ x: 0 , opacity : 1}}
-                    transition={{ duration : 1}}
+                    initial={"offscreen"}
+                    whileInView={"onscreen"}
+                    viewport={{once: true, amount: 0.5}}
+                    variants={leftContainerVariants}
                 >
                 <div className={styles._3__container___containerIcon}>
                     <FaMobileAlt/>
@@ -30,9 +84,10 @@ function WeAreAwesome () {
                 </motion.div>
 
                 <motion.div className={styles._3__container}
-                    initial={{ y : "50px" , opacity : 0}}
-                    animate={{ y : 0 , opacity : 1}}
-                    transition={{ duration : 1}}
+                    initial={"offscreen"}
+                    whileInView={"onscreen"}
+                    viewport={{once: true, amount: 0.5}}
+                    variants={bottomContainerVariants}
                 >
                     <div className={styles._3__container___containerIcon}>
                         <FaRegComment/>
@@ -44,9 +99,10 @@ function WeAreAwesome () {
                 </motion.div>
 
                     <motion.div className={styles._3__container}
-                        initial={{ x : "50px" , opacity : 0}}
-                        animate={{ x : 0 , opacity : 1}}
-                        transition={{ duration : 1}}
+                        initial={"offscreen"}
+                        whileInView={"onscreen"}
+                        viewport={{once: true, amount: 0.5}}
+                        variants={rightContainerVariants}
                     >
                     <div className={styles._3__container___containerIcon}>
                         <FaHtml5/>

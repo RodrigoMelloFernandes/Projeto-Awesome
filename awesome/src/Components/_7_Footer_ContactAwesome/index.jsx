@@ -3,20 +3,63 @@ import styles from './ContactAwesome.module.scss';
 import { motion } from 'framer-motion';
 
 function ContactAwesome () {
+    const h2Variants = {
+        offscreen: {
+            scale : 0
+        },
+        onscreen : {
+            scale : [ .3, 1.05 , .9, 1],
+            transition : 1.5,
+            delay : 1.5
+        }
+    }
+
+    const leftContainerVariants = {
+        offscreen : { 
+            x : "-50px",
+            opacity : 0},
+        onscreen: { 
+            x : 0 , 
+            opacity : 1,
+            transition : {
+                type : "tween",
+                duration: 1,
+                delay: .2
+        }}
+    }
+
+    const rightContainerVariants = {
+        offscreen : { 
+            x : "100px",
+            opacity : 0},
+        onscreen: { 
+            x : 0 , 
+            opacity : 1,
+            transition : {
+                type : "tween",
+                duration: 1,
+                delay: .2
+        }}
+    }
+
+
+
     return (
         <>
         <footer className={styles._7}>
             <motion.h2 className={styles._7__title}
-                initial={{ scale : 0}}
-                animate={{ scale: [ .3, 1.05 , .9, 1] }}
-                transition={{ duration : 1.5}}
+                initial={"offscreen"}
+                whileInView={"onscreen"}
+                viewport={{once: true, amount: 0.5}}
+                variants={h2Variants}
             >contact <span className={styles._7__title___span}>awesome</span></motion.h2>
 
             <div className={styles._7__containerDesktop}>
                 <motion.div className={styles._7__containerDesktopInput}
-                    initial={{ x: "-50px" , opacity : 0}}
-                    animate={{ x: 0 , opacity : 1}}
-                    transition={{ duration : 1}}
+                    initial={"offscreen"}
+                    whileInView={"onscreen"}
+                    viewport={{once: true, amount: 0.5}}
+                    variants={leftContainerVariants}
                 >
                     <h3 className={styles._7__inputTitle}>name</h3>
                     <input className={styles._7__input} type="text" />
@@ -28,9 +71,10 @@ function ContactAwesome () {
                 </motion.div>
 
                 <motion.div className={styles._7__containerDesktopAdress}
-                    initial={{ x: "50px" , opacity : 0}}
-                    animate={{ x: 0 , opacity : 1}}
-                    transition={{ duration : 1}}
+                    initial={"offscreen"}
+                    whileInView={"onscreen"}
+                    viewport={{once: true, amount: 0.5}}
+                    variants={rightContainerVariants}
                 >
                     <h2 className={styles._7__titleAdress}>our adress</h2>
                     <p className={styles._7__subtitleAdress}>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.</p>
