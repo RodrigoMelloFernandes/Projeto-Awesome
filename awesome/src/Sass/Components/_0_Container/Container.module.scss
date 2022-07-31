@@ -14,6 +14,8 @@
         background-color: $Branco;
         @include display-flexDirection(flex, row);
         @include alignItems-justifyContent(center, space-between);
+        position: fixed;
+        width: 100%;
         
         //--------------------Desktop----------------------------->
         @include for-desktop-only {

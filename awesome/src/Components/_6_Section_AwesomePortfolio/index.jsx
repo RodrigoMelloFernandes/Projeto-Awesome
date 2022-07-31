@@ -14,18 +14,6 @@ function AwesomePortfolio () {
         }
     }
 
-    const containerAwesomePortfolio = {
-        offscreen: {
-            opacity : 0
-        },
-        onscreen: {
-            opacity : 1,
-            transition: {
-                duration : 1,
-                delay : .5
-            }
-        }
-    }
 
     const containerChildrenVariants = {
         offscreen : {
@@ -34,7 +22,7 @@ function AwesomePortfolio () {
         onscreen : {
             opacity : 1,
             transition : {
-                type : "tween",
+                type : "bounce",
                 duration : 1,
                 delay: 1.6
             }
